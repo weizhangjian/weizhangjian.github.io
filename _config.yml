@@ -1,0 +1,65 @@
+#
+###################################
+# Site wide configuration
+####################################
+#
+title:       "JustinWei'S Personal Blog"
+description: "JustinWei的个人博客"
+url:         http://weizhangjian.github.io
+# the base hostname & protocol for your site
+
+#
+###################################
+# Jekyll configuration
+####################################
+#
+timezone:          Asia/Shanghai
+markdown:          kramdown
+highlighter:       rouge
+excerpt_separator: <!--more-->
+permalink:         /articles/:year/:month/:day/:title
+
+kramdown:
+  auto_ids:       true
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  enable_coderay: false
+
+#
+###################################
+# Site Owner configuration
+####################################
+#
+owner:
+  name: JustinWei
+  avatar: avatar.jpg
+  job: "IT Engineer"
+  bio: "Write about yourself"
+  email:"weizhangjian@gmail.com"
+  disqus-shortname:
+  twitter:
+  facebook:
+  google:
+    plus:
+    analytics:
+    verify:
+    ad-client:
+    ad-slot:
+  bing-verify:
+  github: weizhangjian
+  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
+  linkedin: #username
+  xing: #username
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+  weibo: #username
+  flickr: #username
+  codepen: #username

@@ -1,65 +1,103 @@
-#
-###################################
-# Site wide configuration
-####################################
-#
-title:       "JustinWei'S Personal Blog"
-description: "JustinWei的个人博客"
-url:         http://weizhangjian.github.io
-# the base hostname & protocol for your site
+# Site settings
+title: JustinWei'S Personal Blog
+SEOTitle: 魏张建的博客 | JustinWei'S Personal Blog
+header-img: img/home-bg.jpg
+email: weizhangjian@gmail.com
+description: ""
+keyword: ""
+url: "http://weizhangjian.github.io"              # your host, for absolute URL
+baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
-#
-###################################
-# Jekyll configuration
-####################################
-#
-timezone:          Asia/Shanghai
-markdown:          kramdown
-highlighter:       rouge
-excerpt_separator: <!--more-->
-permalink:         /articles/:year/:month/:day/:title
 
+
+# SNS settings
+RSS: true
+weibo_username:     cm25
+zhihu_username:     justinwei
+github_username:    weizhangjian
+twitter_username:   weizhangjian
+facebook_username:  weizhangjian.vip
+email_username:     weizhangjian@gmail.com
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+highlighter: rouge
+permalink: pretty
+paginate: 5                             # 一页你准备放几篇文章
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate, jekyll-feed]
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
 kramdown:
-  auto_ids:       true
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  enable_coderay: false
+  input: GFM                            # use Github Flavored Markdown !important
 
-#
-###################################
-# Site Owner configuration
-####################################
-#
-owner:
-  name: JustinWei
-  avatar: avatar.jpg
-  job: "IT Engineer"
-  bio: "Write about yourself"
-  email: "weizhangjian@gmail.com"
-  disqus-shortname:
-  twitter:
-  facebook:
-  google:
-    plus:
-    analytics:
-    verify:
-    ad-client:
-    ad-slot:
-  bing-verify:
-  github: weizhangjian
-  stackoverflow: #123456/username   from a "http://stackoverflow.com/users/123456/username" link
-  linkedin: #username
-  xing: #username
-  instagram: #username
-  lastfm: #username
-  tumblr: #username
-  pinterest: #username
-  foursquare: #username
-  steam: #username
-  dribbble: #username
-  youtube: #username
-  soundcloud: #username
-  weibo: #username
-  flickr: #username
-  codepen: #username
+
+
+# Disqus settings
+# disqus_username: justinwei
+
+# Duoshuo settings
+duoshuo_username: JustinWei
+# Share component is depend on Comment so we can NOT use share only.
+duoshuo_share: true                     # set to false if you want to use Comment without Sharing
+
+
+
+
+# Analytics settings
+# Baidu Analytics
+ba_track_id: 099917dd30a7126cb18f49b504243102
+# Google Analytics
+ga_track_id: 'UA-44237582-3'            # Format: UA-xxxxxx-xx
+ga_domain: auto
+
+
+
+# Sidebar settings
+sidebar: true                           # 是否开启侧边栏
+sidebar-about-description: "写写代码，做做设计，看看产品。世界那么大，多玩玩看看。"
+sidebar-avatar: /img/avatar-justinwei.jpg      # 你的头像，请使用绝对地址, 例如： `/` and `/about/`
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否开启标签功能
+featured-condition-size: 2              # 如果一个标签的 SIZE，也就是使用该标签的文章数大于设定的条件值，这个标签就会在首页上被推荐。
+
+
+
+# Friends
+friends: [
+    {
+        title: "欢",
+        href: "#"
+    },{
+        title: "迎",
+        href: "#"
+    },{
+        title: "互",
+        href: "#"
+    },{
+        title: "加",
+        href: "#"
+    },{
+        title: "好",
+        href: "#"
+    },{
+        title: "友",
+        href: "#"
+    }
+]

@@ -1,79 +1,75 @@
 ---
 layout:     post
-title:      "Welcome to Hux Blog"
+title:      "Welcome to JustinWei's Blog"
 subtitle:   " \"Hello World, Hello Blog\""
-date:       2015-01-29 12:00:00
-author:     "Hux"
+date:       2016-06-10 12:00:00
+author:     "JustinWei"
 header-img: "img/post-bg-2015.jpg"
 tags:
     - 生活
 ---
 
-> “Yeah It's on. ”
+> “A good beginning is half the battle.”
 
 
 ## 前言
 
-Hux 的 Blog 就这么开通了。
+机缘巧合在G+上看到了Study Jams的[活动链接](http://www.studyjamscn.com/thread-6-1-2.html)，凭借对谷歌的信仰，毫不犹豫参与了进来，经过一个月的学习，成功完成了第一阶段的考核,成为一名名副其实的入门级安卓开发人员。
+主办方稍息调整和准备，现在开始了[第二阶段](http://www.studyjamscn.com/thread-13279-1-1.html)的活动，其中第一个任务就是有一个自己的技术博客，这才有了这个Blog。
+作为一个有逼格的程序猿，Blog这种那么有个性化的东西挂在大众博客程序上太没意思了，经过比较最后选择了[GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllcn.com/)的建站方案。
 
-[跳过废话，直接看技术实现 ](#build)
-
-
-
-2015 年，Hux 总算有个地方可以好好写点东西了。
-
-
-作为一个程序员， Blog 这种轮子要是挂在大众博客程序上就太没意思了。一是觉得大部分 Blog 服务都太丑，二是觉得不能随便定制不好玩。之前因为太懒没有折腾，结果就一直连个写 Blog 的地儿都没有。
-
-在玩了一段时间知乎之后，答题的快感又激起了我开博客的冲动。之前的[个人网站](http://huangxuan.me/portfolio)是作品集形式的（现在集成进来了），并不适合用来写博文，一不做二不休，花一天搞一个吧！
-
-
-<p id = "build"></p>
 ---
 
 ## 正文
 
-接下来说说搭建这个博客的技术细节。  
-
-正好之前就有关注过 [GitHub Pages](https://pages.github.com/) + [Jekyll](http://jekyllrb.com/) 快速 Building Blog 的技术方案，非常轻松时尚。
-
-其优点非常明显：
-
-* **Markdown** 带来的优雅写作体验
-* 非常熟悉的 Git workflow ，**Git Commit 即 Blog Post**
-* 利用 GitHub Pages 的域名和免费无限空间，不用自己折腾主机
-	* 如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就好了
-* Jekyll 的自定制非常容易，基本就是个模版引擎
-
-
-本来觉得最大的缺点可能是 GitHub 在国内访问起来太慢，所以第二天一起床就到 GitCafe(Chinese GitHub Copy) 迁移了一个[镜像](http://huxpro.gitcafe.io)出来，结果还是巨慢。
-
-哥哥可是个前端好嘛！ 果断开 Chrome DevTool 查了下网络请求，原来是 **pending 在了 Google Fonts** 上，页面渲染一直被阻塞到请求超时为止，难怪这么慢。  
-忍痛割爱，只好把 Web Fonts 去了（反正超时看到的也只能是 fallback ），果然一下就正常了，而且 GitHub 和 GitCafe 对比并没有感受到明显的速度差异，虽然 github 的 ping 值明显要高一些，达到了 300ms，于是用 DNSPOD 优化了一下速度。
-
-
+先说说为啥选这个方案：
+> - [**GitHub Pages**](https://pages.github.com) 深度集成了Jekyll，Jekyll是用ruby语言实现的一个静态网站生成器，用[Markdown](http://daringfireball.net/projects/markdown)（或 [Textile](http://redcloth.org/textile)）、[Liquid](https://github.com/Shopify/liquid/wiki) 和 HTML & CSS 构建可发布的静态网站，当然包括生成博客。
+> - [**Jekyll**](http://jekyllcn.com) 使用 Liquid [模板语言](http://jekyllcn.com/docs/templates)，支持所有标准的 Liquid 标签和过滤器。Jekyll 甚至增加了几个过滤器和标签，自定制网站方便使用。
+> - 有GitHub Pages的域名和免费无限空间，如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就可以。
+> - **Markdown** 带来高效、优雅的写作体验
 
 ---
+接下来说说搭建这个博客的技术细节，搭建方法网上一大堆，但建议在官方文档中去找方法。
 
-配置的过程中也没遇到什么坑，基本就是 Git 的流程，相当顺手
+### **搭建步骤：**
 
-大的 Jekyll 主题上直接 fork 了 Clean Blog（这个主题也相当有名，就不多赘述了。唯一的缺点大概就是没有标签支持，于是我给它补上了。）
+#### 1. [GitHub Pages](https://pages.github.com)上搭建博客仓库，按照网页的提示选择创建就可以。
+这里要注意[User, Organization, and Project Pages](https://help.github.com/articles/user-organization-and-project-pages/)的区别，**User & Organization Pages**是GitHub pages的特殊的仓库，必须要用账户名来命名仓库名:`username.github.io`。`master`主分支将被用来建立和发布您的GitHub pages网站。
 
-本地调试环境需要 `gem install jekyll`，结果 rubygem 的源居然被墙了……后来手动改成了我大淘宝的镜像源才成功
+#### 2. [在本地安装Jekyll并搭建博客](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)
+现在各个平台都支持，具体实现可以参照[Github文档](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#platform-windows)或[Jekyll文档](http://jekyllcn.com/docs/installation/).
+这里需要注意的有在国内rubygem的源被墙了，换成[Ruby中国](http://gems.ruby-china.org/)的镜像就能解决，请确保只有gems.ruby-china.org，有多个源也会影响速度。
+```python
+$ gem sources --add http://gems.ruby-china.org/ --remove https://rubygems.org/
+$ gem sources -l
+*** CURRENT SOURCES ***
 
-Theme 的 CSS 是基于 Bootstrap 定制的，看得不爽的地方直接在 Less 里改就好了（平时更习惯 SCSS 些），**不过其实我一直觉得 Bootstrap 在移动端的体验做得相当一般，比我在淘宝参与的团队 CSS 框架差多了……**所以为了体验，也补了不少 CSS 进去
+http://gems.ruby-china.org
+```
 
-最后就进入了耗时反而最长的**做图、写字**阶段，也算是进入了**写博客**的正轨，因为是类似 Hack Day 的方式去搭这个站的，所以折腾折腾着大半夜就过去了。
+#### 3. 选择有个性的主题，并修改模板，配置Jekyll
+官网的主题有很多，[点开链接](http://jekyllthemes.org/)随你选择。
+我选了Hux更改[Clean Blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll)主题后的改进版，带标签支持。 然后编辑_config.yml，更改相应参数。
+我在这里推荐两个主题，个人觉的很不错：
+> 项目地址：https://github.com/Gaohaoyang/gaohaoyang.github.io； 主页：[HyG →](http://gaohaoyang.github.io/),
+> 项目地址：https://github.com/Huxpro/huxpro.github.io； 主页：[Hux →](http://huangxuan.me/)   
 
-第二天考虑中文字体的渲染，fork 了 [Type is Beautiful](http://www.typeisbeautiful.com/) 的 `font` CSS，调整了字号，适配了 Win 的渣渲染，中英文混排效果好多了。
+#### 4. 用Markdown编写post
+推荐使用[cmd markdown](https://www.zybuluo.com/cmd)在线编辑器编写。
+这一阶段是最耗时的阶段，也算是进入写博文的正轨了，现在你看到的这篇就是用这个编辑器编写的。
 
+#### 5. 同步到GitHub仓库
+可以用GitHub的客户端，也可以用git命令。
+GitHub的windows客户端完全傻瓜化操作，git命令也不麻烦
+```python
+$ git add .
+$ git commit -m "Blog"
+$ git remote add origin https://github.com/username/username.github.com.git
+$ git push origin master
+```
+---
 
 ## 后记
 
-回顾这个博客的诞生，纯粹是出于个人兴趣。在知乎相关问题上回答并获得一定的 star 后，我决定把这个博客主题当作一个小小的开源项目来维护。
-
-在经历 v1.0 - v1.5 的蜕变后，这个博客主题愈发完整，不但增加了诸多 UI 层的优化（opinionated）；在代码层面，更加丰富的配置项也使得这个主题拥有了更好的灵活性与可拓展性。而作为一个开源项目，我也积极的为其完善文档与解决 issue。
-
-如果你恰好逛到了这里，希望你也能喜欢这个博客主题。
-
-—— Hux 后记于 2015.10
+回顾这个博客的诞生，一方面是完成StudyJams第二阶段的首次任务，更主要的另一方面是自己的兴趣，喜欢折腾这些东西！
+如果你恰好逛到了这里，希望这篇博文能帮到你！

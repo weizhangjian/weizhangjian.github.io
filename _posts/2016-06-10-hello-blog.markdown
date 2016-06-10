@@ -23,6 +23,7 @@ tags:
 ## 正文
 
 先说说为啥选这个方案：
+
 > * [**GitHub Pages**](https://pages.github.com) 深度集成了Jekyll，Jekyll是用ruby语言实现的一个静态网站生成器，用[Markdown](http://daringfireball.net/projects/markdown)（或 [Textile](http://redcloth.org/textile)）、[Liquid](https://github.com/Shopify/liquid/wiki) 和 HTML & CSS 构建可发布的静态网站，当然包括生成博客。
 > * [**Jekyll**](http://jekyllcn.com) 使用 Liquid [模板语言](http://jekyllcn.com/docs/templates)，支持所有标准的 Liquid 标签和过滤器。Jekyll 甚至增加了几个过滤器和标签，自定制网站方便使用。
 > * 有GitHub Pages的域名和免费无限空间，如果需要自定义域名，也只需要简单改改 DNS 加个 CNAME 就可以。
@@ -51,8 +52,9 @@ http://gems.ruby-china.org
 官网的主题有很多，[点开链接](http://jekyllthemes.org/)随你选择。
 我选了Hux更改[Clean Blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll)主题后的改进版，带标签支持。 然后编辑_config.yml，更改相应参数。
 我在这里推荐两个主题，个人觉的很不错：
-> * 项目地址：https://github.com/Gaohaoyang/gaohaoyang.github.io  主页：[HyG →](http://gaohaoyang.github.io/),
-> * 项目地址：https://github.com/Huxpro/huxpro.github.io          主页：[Hux →](http://huangxuan.me/)   
+
+> * 项目地址：[gaohaoyang](https://github.com/Gaohaoyang/gaohaoyang.github.io)  主页：[HyG →](http://gaohaoyang.github.io/),
+> * 项目地址：[huxpro](https://github.com/Huxpro/huxpro.github.io)              主页：[Hux →](http://huangxuan.me/)   
 
 #### 4. 用Markdown编写post
 推荐使用[cmd markdown](https://www.zybuluo.com/cmd)在线编辑器编写。

@@ -40,6 +40,7 @@ tags:
 #### 2. [在本地安装Jekyll并搭建博客](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/)
 现在各个平台都支持，具体实现可以参照[Github文档](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/#platform-windows)或[Jekyll文档](http://jekyllcn.com/docs/installation/).
 这里需要注意的有在国内rubygem的源被墙了，换成[Ruby中国](http://gems.ruby-china.org/)的镜像就能解决，请确保只有gems.ruby-china.org，有多个源也会影响速度。
+
 ```js
 $ gem sources --add http://gems.ruby-china.org/ --remove https://rubygems.org/
 $ gem sources -l
@@ -63,12 +64,14 @@ http://gems.ruby-china.org
 #### 5. 同步到GitHub仓库
 可以用GitHub的客户端，也可以用git命令。
 GitHub的windows客户端完全傻瓜化操作，git命令也不麻烦
+
 ```js
 $ git add .
 $ git commit -m "Blog"
 $ git remote add origin https://github.com/username/username.github.com.git
 $ git push origin master
 ```
+
 ---
 
 ## 后记

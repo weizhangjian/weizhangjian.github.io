@@ -67,7 +67,9 @@ http://gems.ruby-china.org
 
 #### 4. 用Markdown编写post
 
-推荐使用[cmd markdown](https://www.zybuluo.com/cmd)在线编辑器编写。
+在线编辑器推荐使用[cmd markdown](https://www.zybuluo.com/cmd)。
+
+本地客户端推荐使用[Atom](https://atom.io/)的进行编辑。
 
 这一阶段是最耗时的阶段，也算是进入写博文的正轨了，现在你看到的这篇就是用这个编辑器编写的。
 

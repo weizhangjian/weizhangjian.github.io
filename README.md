@@ -1,1 +1,1 @@
-# [JustinWei'S Personal Blog](weizhangjian.github.io)
+# [JustinWei'S Personal Blog](http://weizhangjian.github.io)

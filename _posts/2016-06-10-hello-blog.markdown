@@ -51,8 +51,8 @@ http://gems.ruby-china.org
 官网的主题有很多，[点开链接](http://jekyllthemes.org/)随你选择。
 我选了Hux更改[Clean Blog](https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll)主题后的改进版，带标签支持。 然后编辑_config.yml，更改相应参数。
 我在这里推荐两个主题，个人觉的很不错：
-> * 项目地址：https://github.com/Gaohaoyang/gaohaoyang.github.io； 主页：[HyG →](http://gaohaoyang.github.io/),
-> * 项目地址：https://github.com/Huxpro/huxpro.github.io； 主页：[Hux →](http://huangxuan.me/)   
+> * 项目地址：https://github.com/Gaohaoyang/gaohaoyang.github.io  主页：[HyG →](http://gaohaoyang.github.io/),
+> * 项目地址：https://github.com/Huxpro/huxpro.github.io          主页：[Hux →](http://huangxuan.me/)   
 
 #### 4. 用Markdown编写post
 推荐使用[cmd markdown](https://www.zybuluo.com/cmd)在线编辑器编写。

@@ -63,7 +63,7 @@ Java 线程之间的通信对程序员完全透明，内存可见性问题很容
 
 # [Java 集合](http://wiki.jikexueyuan.com/project/java-collection/)
 
-<img width="490" src="/img/in-post/post-java-basic/java-collection.jpg" />
+<img width="490" src="/img/in-post/post-java-basic/java-collection.jpg"/>
 
 上图是 Java 集合类的一个接口简图。
 

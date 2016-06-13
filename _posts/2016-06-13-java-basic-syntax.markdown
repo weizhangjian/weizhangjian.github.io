@@ -11,13 +11,13 @@ tags:
 
 ## 目 录
 
-[1. Java 基础](#Java)
+[1. Java 基础](#java-)  
 
-	[1.1 Java 概述](#Java--1)
+* [1.1 Java 概述](#java--1)
 
-	[1.2 Java 环境设置](#Java--2)
+* [1.2 Java 环境设置](#java--2)
 
-	[1.3 ]
+* [1.3 Java 基本语法](#java--3)
 
 2.
 
@@ -28,7 +28,7 @@ tags:
 
 Java 是一种高级的编程语言，它最初是由 Sun 公司开发并于 1995 年公开发布的。Java 可以在不同的平台上运行，例如：Windows，Mac OS 和不同版本的 Unix。本指南将让你对 Java 有一个彻底的认识与了解。
 
-## 1. Java基础
+## 1. Java 基础
 
 ### 1.1 Java 概述
 Java 编程语言最初是由太阳计算机系统公司开发的，该公司由 James gosling 于 1995 年创立，它的主要组成部分就是 Java 平台。
@@ -62,23 +62,28 @@ Java 是：
 
 3.Windows下设置环境变量：以jdk-8u91-windows-x64.exe为例，JDK安装在 c:\Program Files\java\jdk1.8.0_91下。
 
-打开Windows命令提示符，然后分别输入以下代码：
+> 打开Windows命令提示符，然后分别输入以下代码：
 
-`wmic ENVIRONMENT where "name='JAVA_HOME' and UserName='<system>'" delete`
+> `wmic ENVIRONMENT where "name='JAVA_HOME' and UserName='<system>'" delete`
 
-`wmic ENVIRONMENT create name="JAVA_HOME",username="<system>",VariableValue="C:\Program  Files\Java\jdk1.8.0_91"`
+> `wmic ENVIRONMENT create name="JAVA_HOME",username="<system>",VariableValue="C:\Program  Files\Java\jdk1.8.0_91"`
 
-`wmic ENVIRONMENT where "name='CLASSPATH' and UserName='<system>'" delete`
+> `wmic ENVIRONMENT where "name='CLASSPATH' and UserName='<system>'" delete`
 
-`wmic ENVIRONMENT create name="CLASSPATH",username="<system>",VariableValue=".;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;%JAVA_HOME%\jre\lib\rt.jar"`
+> `wmic ENVIRONMENT create name="CLASSPATH",username="<system>",VariableValue=".;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar;%JAVA_HOME%\jre\lib\rt.jar"`
 
-`wmic environment where "name='Path' and UserName='<system>'" set VariableValue="%path%;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin"`
+> `wmic environment where "name='Path' and UserName='<system>'" set VariableValue="%path%;%JAVA_HOME%\bin;%JAVA_HOME%\jre\bin"`
 
-流行的 Java 编辑器
-在编写 Java 程序时，你需要一个文本编辑器。市场中有很多精致的编辑器，但是就现在而言，你可以考虑下面几个：
+流行的 Java 编辑器：在编写 Java 程序时，你需要一个文本编辑器。
 
-* 记事本：在 Windows 计算机中你可以使用像记事本（本指导推荐），日记本这样的简单的文本编辑器。
-* [Netbeans](http://www.netbeans.org/index.html)：这是一款开源且免费的 Java 编辑器。
-* [Notepad++](https://notepad-plus-plus.org/)：
-* Eclipse：这是一款由 eclipse 开源社区开发的 Java 编辑器。你可以从以下链接下载 http://www.eclipse.org/
-接下来是什么呢？
+* [Notepad++](https://notepad-plus-plus.org/)：是在windows下的一个免费的代码编辑器，效率很高，可以替代记事本来使用。
+* [Eclipse](http://www.eclipse.org/)：这是一款由 eclipse 开源社区开发的 Java 编辑器。
+
+### 1.3 Java 基本语法
+
+Java 应用程序可以被定义为对象的集合，这些对象通过调用各自的方法来进行通信。下面让我们具体看一看类，对象，方法，实体变量是什么含义。
+
+* 对象:对象具有状态和行为。例如：狗有它的状态—颜色，名字，品种，同时也有行为—摇尾巴，汪汪叫，吃东西。对象时类的一个实例。
+* 类:类可以被定义为描述对象所支持的类型的行为和状态的模板或蓝图。
+* 方法:方法是一种基本的行为。类中可以包含很多方法。在方法中，可以编写逻辑，操纵数据，执行动作。
+* 实体变量:每个对象都有它的特殊的实体变量的集合，一个对象的状态是由那些实体变量所被赋的值所决定的。

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Java 语言快速入门"
+title:      "Java语言快速入门"
 subtitle:   " \"Java 基础知识\""
 date:       2016-06-13 00:00:00
 author:     "JustinWei"
@@ -11,20 +11,19 @@ tags:
 
 ## 目 录
 
-[1. Java 基础](#java--1)
-
-* [1.1 Java 概述](#java--2)
-
-* [1.2 Java 环境设置](#java--3)
-
-* [1.3 Java 基本语法](#java--4)
-
-2.
-
+1. [Java 基础](#java-)
+ * [1.1 Java 概述](#java--1)
+ * [1.2 Java 环境设置](#java--2)
+ * [1.3 Java 基本语法](#java--3)
+2. Java 面对对象
+3. Java 进阶
+4. Java 快速参考指南
+5. Java 库类
 
 
 
-# Java 语言快速入门
+
+# Java语言快速入门
 
 Java 是一种高级的编程语言，它最初是由 Sun 公司开发并于 1995 年公开发布的。Java 可以在不同的平台上运行，例如：Windows，Mac OS 和不同版本的 Unix。本指南将让你对 Java 有一个彻底的认识与了解。
 

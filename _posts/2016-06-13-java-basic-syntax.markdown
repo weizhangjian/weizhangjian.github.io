@@ -11,13 +11,13 @@ tags:
 
 ## 目 录
 
-[1. Java 基础](#java-)  
+[1. Java 基础](#java--1)
 
-* [1.1 Java 概述](#java--1)
+* [1.1 Java 概述](#java--2)
 
-* [1.2 Java 环境设置](#java--2)
+* [1.2 Java 环境设置](#java--3)
 
-* [1.3 Java 基本语法](#java--3)
+* [1.3 Java 基本语法](#java--4)
 
 2.
 

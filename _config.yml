@@ -44,8 +44,8 @@ highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-  auto_ids:      true
-  auto_id_prefix:'id-'
+  auto_ids: true
+  auto_id_prefix: 'id-'
 
 # Disqus settings
 disqus_username: justinwei

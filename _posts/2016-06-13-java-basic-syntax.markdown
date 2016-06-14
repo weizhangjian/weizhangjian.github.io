@@ -387,7 +387,7 @@ public class Puppy{
 
 如果我们编译运行上述程序，那么将会产生如下结果：
 
-```yaml
+```
 Passed Name is : tommy
 Puppy's age is : 2
 Variable Value : 2
@@ -490,7 +490,7 @@ public class EmployeeTest{
 
 现在编译两个类然后运行 EmployeeTest，你将会看到如下结果：
 
-```yaml
+```
 Name:James Smith
 Age:26
 Designation:Senior Software Engineer

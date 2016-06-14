@@ -193,28 +193,6 @@ hr.small
 	border-color: white;
 }
 
-pre
-{
-	margin: 12px 0;
-	padding: 8px 12px;
-	//  overflow-x: auto;
-	word-wrap: break-word;		/* IE 5.5-7 */
-	white-space: -moz-pre-wrap;	/* Firefox 1.0-2.0 */
-	white-space: pre-wrap;		/* current browsers */
-}
-
-code
-{
-	padding: 1px 4px;
-	margin: 0 2px;
-	font-size: 90%;
-	border-radius: 3px;
-	color: #000;
-	border: none;
-	background-color: rgba(0, 0, 0, 0.06);
-	font-family: Menlo,Monaco,"Microsoft YaHei Mono",Consolas,"Courier New",monospace,sans-serif;
-}
-
 pre,
 .table-responsive
 {

@@ -70,7 +70,7 @@ http://gems.ruby-china.org
 
 在线编辑器推荐使用[cmd markdown](https://www.zybuluo.com/cmd)进行编辑。
 
-本地客户端推荐使用[Atom](https://atom.io/)进行编辑。
+本地客户端推荐使用[Atom](https://atom.io/)或[MarkDown Editor](http://chenguanzhou.github.io/MarkDownEditor/)进行编辑。
 
 这一阶段是最耗时的阶段，但也算是进入写博文的正轨了，现在你看到的这篇就是用Atom编辑器编写的。
 

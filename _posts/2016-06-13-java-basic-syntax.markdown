@@ -69,7 +69,7 @@ Java 是：
 
 > 打开Windows命令提示符DOS窗口，然后分别输入以下代码：
 >
-> ```js
+> ```cmd
 wmic ENVIRONMENT where "name='JAVA_HOME' and UserName='<system>'" delete
 wmic ENVIRONMENT create name="JAVA_HOME",username="<system>",VariableValue="C:\Program  Files\Java\jdk1.8.0_91"
 wmic ENVIRONMENT where "name='CLASSPATH' and UserName='<system>'" delete
@@ -158,7 +158,7 @@ Java 的所有的组成部分都要有自己的名称。类、变量和方法的
 
 例如：
 
-```js
+```java
 class FreshJuice {
 
    enum FreshJuiceSize{ SMALL, MEDIUM, LARGE }
@@ -205,7 +205,7 @@ public class FreshJuiceTest {
 
 Java 像 C 和 C++ 一样支持单行或多行注释。所有注释中的字母都会被 Java 编译器忽略。
 
-```js
+```java
 public class MyFirstJavaProgram{
 
    /* This is my first java program.
@@ -259,7 +259,7 @@ Java 的类：类是有独立的对象创造出的蓝图。
 
 下面给出了一个类的例子：
 
-```js
+```java
 public class Dog{
    String breed;
    int age;
@@ -296,7 +296,7 @@ public class Dog{
 
 下面给出了一个构造器的例子：
 
-```js
+```java
 public class Puppy{
    public Puppy(){
    }
@@ -319,7 +319,7 @@ public class Puppy{
 
 下面给出了一个创造对象的例子：
 
-```js
+```java
 public class Puppy{
 
    public Puppy(String name){
@@ -340,7 +340,7 @@ public class Puppy{
 访问实体变量和方法
 实体变量和方法是通过创造对象来访问的。为了访问一个实体变量完全有效的路径应该如下所示：
 
-```js
+```java
 /* First create an object */
 ObjectReference = new Constructor();
 /* Now call a variable as follows */
@@ -351,7 +351,7 @@ ObjectReference.MethodName();
 
 例子:这个例子解释了如何存取类的实体变量和方法：
 
-```js
+```java
 public class Puppy{
 
    int puppyAge;
@@ -387,7 +387,7 @@ public class Puppy{
 
 如果我们编译运行上述程序，那么将会产生如下结果：
 
-```js
+```yaml
 Passed Name is : tommy
 Puppy's age is : 2
 Variable Value : 2
@@ -427,7 +427,7 @@ Variable Value : 2
 
 这个是 Employee 类，这个类是公共类。这个 Employee 类包括四个实体变量姓名（name），年龄（age），职位（designation）和薪水（salary）。这个类有一个确定的需要参数的的构造器。
 
-```js
+```java
 import java.io.*;
 public class Employee{
    String name;
@@ -465,7 +465,7 @@ public class Employee{
 
 下面所给的是 EmployeeTest 类，这个类创建了两个 Employee 类的实例，并且为每个对象调用方法从而给每个变量赋值。在 EmployeeTest.java 文件中保存下列代码
 
-```js
+```java
 import java.io.*;
 public class EmployeeTest{
 
@@ -490,7 +490,7 @@ public class EmployeeTest{
 
 现在编译两个类然后运行 EmployeeTest，你将会看到如下结果：
 
-```js
+```yaml
 Name:James Smith
 Age:26
 Designation:Senior Software Engineer
@@ -506,19 +506,19 @@ Salary:500.0
 描述符是你添加到那些定义中来改变他们的意思的关键词。Java 语言有很多描述符，包括以下这些：
 
 * 可访问描述符：Java 提供一系列可访问描述符来设定类，变量，方法和构造器的访问级别，四种访问级别如下
- 1. 默认的，对封装可见。不需要描述符。
- 2. private 仅对类可见
- 3. public 全部可见
- 4. protected 对封装和子类可见
+	1. 无描述符，对封装可见。
+	2. private ，仅对类可见
+	3. public， 全部可见
+	4. protected ，对封装和子类可见
 
 * 不可访问描述符：Java 提供一些不可访问描述符来满足其他功能
- 1. Static 用来创造类方法和变量的。
- 2. Final 用来最终确定和实施类、方法和变量的。
- 3. synchronized 和 volatile 用来当做线的。
+	1. Static，用来创造类方法和变量的。
+	2. Final，用来最终确定和实施类、方法和变量的。
+	3. synchronized 和 volatile，用来当做线的。
 
 应用描述符，你可以在类、方法、变量中加入相应关键字。描述符要先于声明，如下面的例子所示：
 
-```js
+```java
 public class className {
    // ...
 }

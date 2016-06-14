@@ -32,6 +32,7 @@ tags:
 > *  **Markdown** 带来高效、优雅的写作体验
 
 ---
+
 接下来说说搭建这个博客的技术细节，搭建方法网上一大堆，但建议在官方文档中去找方法。
 
 ### 搭建步骤：
@@ -46,7 +47,7 @@ tags:
 
 这里需要注意的有在国内rubygem的源被墙了，换成[Ruby中国](http://gems.ruby-china.org/)的镜像就能解决，请确保只有gems.ruby-china.org，有多个源也会影响速度。
 
-```js
+```
 $ gem sources --add http://gems.ruby-china.org/ --remove https://rubygems.org/
 $ gem sources -l
 *** CURRENT SOURCES ***
@@ -79,7 +80,7 @@ http://gems.ruby-china.org
 
 GitHub的windows客户端完全傻瓜化操作，git命令也不麻烦
 
-```js
+```
 $ git add .
 $ git commit -m "Blog"
 $ git remote add origin https://github.com/username/username.github.com.git

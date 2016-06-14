@@ -21,9 +21,8 @@ email_username:     weizhangjian@gmail.com
 
 
 # Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+
 timezone: Asia/Shanghai
-highlighter: rouge
 permalink: pretty                       #URL类型 /:categories/:year/:month/:day/:title/
 paginate: 5                             # 一页你准备放几篇文章
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
@@ -36,15 +35,17 @@ anchorjs: true                          # if you want to customize anchor. check
 gems: [jekyll-paginate, jekyll-feed]
 
 
-
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 # Markdown settings
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
+highlighter: rouge
 markdown: kramdown
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
-
+  auto_ids:      true
+  auto_id_prefix:'id-'
 
 # Disqus settings
 disqus_username: justinwei

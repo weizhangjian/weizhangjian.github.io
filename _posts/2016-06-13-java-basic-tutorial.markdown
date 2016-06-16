@@ -123,7 +123,7 @@ Java语言尽量保证系统内存在1G以上，其他工具如下所示：
 
 视频演示如下所示：  
 <video style="width: 80%;" controls >
-    <source src="http://weizhangjian.github.io/img/in-post/post-java-basic-tutorial/Eclipse-java.mp4" type="video/mp4">
+    <source src="http://static.runoob.com/video/javadownload.mp4" type="video/mp4">
 </video>
 
 
@@ -425,7 +425,7 @@ Java 作为一种面向对象语言，支持以下基本概念：
 
 本节我们重点研究对象和类的概念。
 
-* **对象：**对象是类的一个实例，有状态和行为，状态被储存在文件中，它的行为通过方法来表现。方法控制对象的内在状态，完成对象与对象之间的交流。
+* **对象：**对象是类的一个实例，有状态和行为，状态被储存在文件中，它的行为通过方法来表现。
 * **类：**类是一个模板，它描述一类对象的行为和状态。
 
 下图中男孩女孩为类，而具体的每个人为该类的对象：  
@@ -434,59 +434,88 @@ Java 作为一种面向对象语言，支持以下基本概念：
 
 --------
 
-
-下面给出了一个类的例子：
-
-```java
-public class Dog{
-   String breed;
-   int age;
-   String color;
-
-   void barking(){
-   }
-
-   void hungry(){
-   }
-
-   void sleeping(){
-   }
-}
-```
-
-类可以包括以下的变量类型：
-
-* 局部变量：在方法、构造器或区域内声明的变量。变量将会在方法内产生和发展，然后当方法结束变量就会破坏。
-* 实例变量：在类内但在方法外声明的变量。这些变量是当类被装载时被实体化的。实例变量可以从特定类的任何方法、构造器、区域中存取。
-* 类变量：在类内声明的变量，它处在任何方法之外，有静态关键字。
-
-类可以有任意数量的方法来存取不同种类方法的值。在上面的例子中，barking()，hungry() 和 sleeping() 是方法。
-
----
-
-**下面提到的是一些深入了解 Java 语言所必须知道的内容。**
-
-#### 构造器
+##### Java中的对象
 {:.no_toc}
 
-每一个类都有一个构造器。如果我们不单独为一个类编写构造器那么 Java 的编译器将会给这个类建立一个默认的构造器。
+现在让我们深入了解什么是对象。看看周围真实的世界，会发现身边有很多对象，车，狗，人等等。所有这些对象都有自己的状态和行为。  
+拿一条狗来举例，它的状态有：名字、品种、颜色，行为有：叫、摇尾巴和跑。  
+对比现实对象和软件对象，它们之间十分相似。  
+软件对象也有状态和行为。软件对象的状态就是属性，行为通过方法体现。  
+在软件开发中，方法操作对象内部状态的改变，对象的相互调用也是通过方法来完成。
 
-每当一个新的对象被创建，至少一个构造器将会被调用。构造器的一个最主要的原则就是他们必须和类有同样的名字。一个类可以有不止一个构造器。
+##### Java中的类
+{:.no_toc}
 
-下面给出了一个构造器的例子：
+类可以看成是创建Java对象的模板。  
+通过下面一个简单的类来理解下Java中类的定义：
 
 ```java
-public class Puppy{
-   public Puppy(){
-   }
+public class Dog {
+	String breed;
+	int age;
+	String color;
 
-   public Puppy(String name){
-      // This constructor has one parameter, name.
-   }
+	void barking() {
+	}
+
+	void hungry() {
+	}
+
+	void sleeping() {
+	}
 }
 ```
 
-在需要只创建一个类的实例的时，Java 也支持单例。
+一个类可以包含以下类型变量：
+
+* **局部变量：**在方法、构造方法或者语句块中定义的变量被称为局部变量。变量声明和初始化都是在方法中，方法结束后，变量就会自动销毁。
+* **成员变量：**成员变量是定义在类中，方法体之外的变量。这种变量在创建对象的时候实例化。成员变量可以被类中方法、构造方法和特定类的语句块访问。
+* **类变量：**类变量也声明在类中，方法体之外，但必须声明为static类型。
+
+> 一个类可以拥有多个方法，在上面的例子中：barking()、hungry()、sleeping()都是Dog类的方法。
+
+
+--------
+
+
+
+##### 构造方法
+{:.no_toc}
+
+每个类都有构造方法。如果没有显式地为类定义构造方法，Java编译器将会为该类提供一个默认构造方法。这个构造方法没有参数,修饰符是public并且方法体为空。  
+在创建一个对象的时候，至少要调用一个构造方法。构造方法的名称必须与类同名，一个类可以有多个构造方法。  
+下面是一个构造方法示例：
+
+```java
+public class Puppy {
+	public Puppy() {
+	}
+
+	public Puppy(String name) {
+		// 这个构造器仅有一个参数：name
+		System.out.println("Puppy's name is : " + name );
+	}
+	
+	public Puppy(int age) {
+		// 这个构造器仅有一个参数：age
+		System.out.println("Puppy's age is : " + age );
+	}
+	
+	public static void main(String []args){
+		Puppy name= new Puppy("tommy");
+		Puppy age= new Puppy(2);
+	}
+}
+
+```
+
+> 1. 构造方法不能有任何非访问性质的修饰符修饰，例如static、final、synchronized、abstract等都不能修饰构造方法。
+> 2. 构造方法是没有返回类型的，void也不行。
+> 3. 构造方法与类名相同,所以首字母一般大写。
+
+
+--------
+
 
 #### 创造一个对象
 {:.no_toc}

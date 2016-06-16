@@ -180,11 +180,11 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.91-b15, mixed mode)
 
 一个Java程序可以认为是一系列对象的集合，而这些对象通过调用彼此的方法来协同工作。下面简要介绍下类、对象、方法和实例变量的概念。
 
-* 对象：**对象是类的一个实例，有状态（变量）和行为（方法）。**  
+* **对象：**对象是类的一个实例，有状态（变量）和行为（方法）。  
   例如：狗有它的状态——颜色，名字，品种，同时也有行为——摇尾巴，汪汪叫，吃东西。
-* 类：**类是一个模板，它描述一类对象的行为和状态。**
-* 方法：**即行为，逻辑运算、数据修改以及所有动作都是在方法中完成的**。一个类可以有很多方法。
-* 实体变量：每个对象都有独特的实例变量，**对象的状态由这些实例变量的值决定。**
+* **类：**类是一个模板，它描述一类对象的行为和状态。
+* **方法：**即行为，逻辑运算、数据修改以及所有动作都是在方法中完成的。
+* **实体变量：**每个对象都有独特的实例变量，对象的状态由这些实例变量的值决定。
 
 
 --------
@@ -198,12 +198,12 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.91-b15, mixed mode)
 * **大小写敏感性：**Java是大小写敏感的，这就意味着标识符Hello与hello是不同的。
 * **类名：**对于所有的类来说，类名的首字母应该大写。  
       如果类名由若干单词组成，那么每个单词的首字母都要大写。  
-      例如类 `MyFirstJavaClass`
+      例如： `public class MyFirstJavaClass`
 * **方法名：**所有的方法名都应该以小写字母开头。  
       如果方法名含有若干单词，则后面的每个单词首字母大写。  
-      例如 `public void myMethodName()`
+      例如： `public void myMethodName()`
 * **源文件名：**源文件名必须和类名相同。当保存文件的时候，你应该使用类名作为文件名保存（切记Java是大小写敏感的），文件名的后缀为.java。（如果文件名和类名不相同则会导致编译错误）。  
-      例如：假设类名是 `MyFirstJavaProgram`，那么源文件名就应该是 `MyFirstJavaProgram.java`。
+      例如：假设类名是 `MyFirstJavaProgram`，那么源文件名就应该是`MyFirstJavaProgram.java`。
 * **主方法入口：**所有的Java 程序由 `public static void main(String []args)` 方法开始执行。这个方法是 Java 程序的强制性的部分。
 
 
@@ -213,7 +213,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.91-b15, mixed mode)
 ##### Java 标识符
 {:.no_toc}
 
-Java所有的组成部分都需要名字。类名、变量名以及方法名都被称为标识符。  
+Java所有的组成部分都需要名字。类名、变量名以及方法名都被称为标识符。
+
 关于Java标识符，有以下几点需要注意：
 
 * 所有标识符必须以字母（ A 到 Z 或者 a 到 z ）、货币字符（ $ ）或者下划线( _ )开头
@@ -409,7 +410,7 @@ public class HelloWorld {
 --------
 
 
-# 5. Java 的对象和类
+# 5. Java 对象和类
 
 Java 作为一种面向对象语言，支持以下基本概念：
 
@@ -425,7 +426,7 @@ Java 作为一种面向对象语言，支持以下基本概念：
 
 本节我们重点研究对象和类的概念。
 
-* **对象：**对象是类的一个实例，有状态和行为，状态被储存在文件中，它的行为通过方法来表现。
+* **对象：**对象是类的一个实例，有状态和行为。
 * **类：**类是一个模板，它描述一类对象的行为和状态。
 
 下图中男孩女孩为类，而具体的每个人为该类的对象：  
@@ -434,7 +435,7 @@ Java 作为一种面向对象语言，支持以下基本概念：
 
 --------
 
-##### Java中的对象
+#### Java中的对象
 {:.no_toc}
 
 现在让我们深入了解什么是对象。看看周围真实的世界，会发现身边有很多对象，车，狗，人等等。所有这些对象都有自己的状态和行为。  
@@ -443,7 +444,7 @@ Java 作为一种面向对象语言，支持以下基本概念：
 软件对象也有状态和行为。软件对象的状态就是属性，行为通过方法体现。  
 在软件开发中，方法操作对象内部状态的改变，对象的相互调用也是通过方法来完成。
 
-##### Java中的类
+#### Java中的类
 {:.no_toc}
 
 类可以看成是创建Java对象的模板。  
@@ -479,7 +480,7 @@ public class Dog {
 
 
 
-##### 构造方法
+#### 构造方法
 {:.no_toc}
 
 每个类都有构造方法。如果没有显式地为类定义构造方法，Java编译器将会为该类提供一个默认构造方法。这个构造方法没有参数,修饰符是public并且方法体为空。  
@@ -502,8 +503,8 @@ public class Puppy {
 	}
 	
 	public static void main(String []args){
-		Puppy name= new Puppy("tommy");
-		Puppy age= new Puppy(2);
+		Puppy puppyName = new Puppy("tommy");
+		Puppy puppyAge = new Puppy(2);
 	}
 }
 
@@ -517,84 +518,87 @@ public class Puppy {
 --------
 
 
-#### 创造一个对象
+#### 创建对象
 {:.no_toc}
 
-如前所述，类为对象提供了蓝图。因此基本来说一个对象是从一个类中创造出来的。在 Java 中，新的关键词被用来创造新的对象。当我们从类中创造对象时需要三步：
+对象是根据类创建的。在Java中，使用关键字new来创建一个新的对象。创建对象需要以下三步：
 
-1. 声明：变量声明可以声明其所代表的对象类型。
-2. 实例化：“新的”关键词用来创造对象。
-3. 初始化：“新的”关键词伴随着一个构造器的启用，这个将新的对象初始化。
+1. 声明：声明一个对象，包括对象名称和对象类型。
+2. 实例化：使用关键字new来创建一个对象。
+3. 初始化：使用new创建对象时，会调用构造方法初始化对象。
 
 下面给出了一个创造对象的例子：
 
 ```java
-public class Puppy{
+public class Puppy {
+	public Puppy(String name) {
+		// 这个构造器仅有一个参数：name
+		System.out.println("Puppy's name is : " + name);
+	}
 
-   public Puppy(String name){
-      // This constructor has one parameter, name.
-      System.out.println("Passed Name is :" + name );
-   }
-   public static void main(String []args){
-      // Following statement would create an object myPuppy
-      Puppy myPuppy = new Puppy( "tommy" );
-   }
+	public static void main(String[] args) {
+		// 下面的语句将创建一个Puppy对象
+		Puppy puppyName = new Puppy("tommy");
+	}
 }
 ```
 
-如果编译并运行上述程序，那么将输出下列结果：
+编译并运行上面的程序，产生如下结果：
 
-`Passed Name is :tommy`
+`Puppy's name is : tommy`
 
-访问实体变量和方法
-实体变量和方法是通过创造对象来访问的。为了访问一个实体变量完全有效的路径应该如下所示：
+
+--------
+
+
+#### 访问实例变量和方法
+{:.no_toc}
+
+通过已创建的对象来访问成员变量和成员方法，如下所示：
 
 ```java
-/* First create an object */
+/* 实例化对象 */
 ObjectReference = new Constructor();
-/* Now call a variable as follows */
+/* 访问类中的变量 */
 ObjectReference.variableName;
-/* Now you can call a class method as follows */
+/* 访问类中的方法 */
 ObjectReference.MethodName();
 ```
 
-例子:这个例子解释了如何存取类的实体变量和方法：
+实例：下面的例子展示如何访问实例变量和调用成员方法
 
 ```java
-public class Puppy{
+public class Puppy {
+	int puppyAge;
 
-   int puppyAge;
+	public Puppy(String name) {
+		// 这个构造器仅有一个参数：name
+		System.out.println("Passed Name is : " + name);
+	}
 
-   public Puppy(String name){
-      // This constructor has one parameter, name.
-      System.out.println("Passed Name is : " + name );
-   }
-   public void setAge( int age ){
-       puppyAge = age;
-   }
+	public void setAge(int age) {
+		puppyAge = age;
+	}
 
-   public int getAge( ){
-       System.out.println("Puppy's age is : " + puppyAge );
-       return puppyAge;
-   }
-   public static void main(String []args){
-      /* Object creation */
-      Puppy myPuppy = new Puppy( "tommy" );
+	public int getAge() {
+		System.out.println("Puppy's age is : " + puppyAge);
+		return puppyAge;
+	}
 
-      /* Call class method to set puppy's age */
-      myPuppy.setAge( 2 );
-
-      /* Call another class method to get puppy's age */
-      myPuppy.getAge( );
-
-      /* You can access instance variable as follows as well */
-      System.out.println("Variable Value : " + myPuppy.puppyAge );
-   }
+	public static void main(String[] args) {
+		/* 创建对象 */
+		Puppy myPuppy = new Puppy("tommy");
+		/* 通过方法来设定age */
+		myPuppy.setAge(2);
+		/* 调用另一个方法获取age */
+		myPuppy.getAge();
+		/* 你也可以像下面这样访问成员变量 */
+		System.out.println("Variable Value : " + myPuppy.puppyAge);
+	}
 }
-
 ```
 
-如果我们编译运行上述程序，那么将会产生如下结果：
+编译并运行上面的程序，产生如下结果：
 
 ```
 Passed Name is : tommy
@@ -602,106 +606,131 @@ Puppy's age is : 2
 Variable Value : 2
 ```
 
+
+--------
+
+
 #### 源文件声明规则
 {:.no_toc}
 
-当在源文件中声明类，输入和打包语法时，这些规则是十分重要的。
+当在一个源文件中定义多个类，并且还有import语句和package语句时，要特别注意这些规则。
 
-* 每个源文件中只能有一个公共类。
-* 一个源文件可以有很多非公共类。
-* 公共类的名称必须是源文件的名称同时也要以 .java 为后缀。举例来说：类的名称是 public class Employee{}，那么源文件就应该是 Employee.java。
-* 如果类是在一个程序包中定义的，那么程序包的声明必须是源文件的第一个声明。
-*如果输入声明出现那么他们必须被写在封装声明和类声明之间。如果没有封装声明那么输入声明必须在源文件的第一行。
-* 输入和打包声明会暗示所有源文件中的存在的类。在源文件中很难为不同的类区分输入和封装声明。
-类有不同的访问级别并且有很多不同的类；抽象的类，最终的类等等。我将会在后面的访问控制修饰符章节解释这些。
+* 一个源文件中只能有一个public类
+* 一个源文件可以有多个非public类
+* 源文件的名称应该和public类的类名保持一致。  
+  例如：源文件中public类的类名是Employee，那么源文件应该命名为Employee.java。
+* 如果一个类定义在某个包中，那么package语句应该在源文件的首行。
+* 如果源文件包含import语句，那么应该放在package语句和类定义之间。  
+  如果没有package语句，那么import语句应该在源文件中最前面。
+* import语句和package语句对源文件中定义的所有类都有效。  
+  在同一源文件中，不能给不同的类不同的包声明。
 
-除了以上提到的类的类型之外， Java 也有像内部类和匿名类这样的特殊类。
+类有若干种访问级别，并且类也分不同的类型：抽象类和final类等。这些将在访问控制章节介绍。  
+除了上面提到的几种类型，Java还有一些特殊的类，如：内部类、匿名类。
 
-##### Java 程序包
+
+--------
+
+
+##### Java 包
 {:.no_toc}
 
-简而言之，就是一种分类类和接口的一种方法。当用 Java 开发程序时，数百个类和接口会被编写，因此分类这些类不但是必须的而且也是会使问题变得容易的。
+包主要用来对类和接口进行分类。当开发Java程序时，可能编写成百上千的类，因此很有必要对类和接口进行分类。
 
-##### Import 语法
+
+--------
+
+
+##### Import 语句
 {:.no_toc}
 
-在 Java 中，如果给出包括封装和类的名称的全限定名，那么编译器很容易定位到源类和源代码。Import 语法是给编译器寻找特定类的适当位置的一种方法。
+在Java中，如果给出一个完整的限定名，包括包名、类名，那么Java编译器就可以很容易地定位到源代码或者类。  
+Import语句就是用来提供一个合理的路径，使得编译器可以找到某个类。
 
-举例来说，下面这行语句将会要求编译器去装载 `java_installation/java/io` 路径下的所有可用的类:
+例如，下面的命令行将会命令编译器载入`java_installation/java/io`路径下的所有类
 
-`import java.io.*;`
+    import java.io.*;
 
-##### 一个简单的案例学习
+
+--------
+
+
+##### 一个简单的案例
 {:.no_toc}
 
-在我们的案例学习中，我们将创造两个类。他们是 Employee 和 EmployeeTest。
-
-首先打开记事本输入下列代码，以 `Employee.java` 为文件名保存这个源文件。
-
-这个是 Employee 类，这个类是公共类。这个 Employee 类包括四个实体变量姓名（name），年龄（age），职位（designation）和薪水（salary）。这个类有一个确定的需要参数的的构造器。
+在该案例中，我们创建两个类：Employee和EmployeeTest。  
+首先打开文本编辑器，把下面的代码粘贴进去，以 `Employee.java` 为文件名保存这个源文件。  
+Employee类有四个成员变量，name、age、designation、salary。  
+该类显式声明了一个构造方法，该方法只有一个参数。
 
 ```java
 import java.io.*;
-public class Employee{
-   String name;
-   int age;
-   String designation;
-   double salary;
 
-   // This is the constructor of the class Employee
-   public Employee(String name){
-      this.name = name;
-   }
-   // Assign the age of the Employee  to the variable age.
-   public void empAge(int empAge){
-      age =  empAge;
-   }
-   /* Assign the designation to the variable designation.*/
-   public void empDesignation(String empDesig){
-      designation = empDesig;
-   }
-   /* Assign the salary to the variable salary.*/
-   public void empSalary(double empSalary){
-      salary = empSalary;
-   }
-   /* Print the Employee details */
-   public void printEmployee(){
-      System.out.println("Name:"+ name );
-      System.out.println("Age:" + age );
-      System.out.println("Designation:" + designation );
-      System.out.println("Salary:" + salary);
-   }
+public class Employee {
+	String name;
+	int age;
+	String designation;
+	double salary;
+
+	// Employee 类的构造器
+	public Employee(String name) {
+		this.name = name;
+	}
+
+	// 设置age的值
+	public void empAge(int empAge) {
+		age = empAge;
+	}
+
+	/* 设置designation的值 */
+	public void empDesignation(String empDesig) {
+		designation = empDesig;
+	}
+
+	/* 设置salary的值 */
+	public void empSalary(double empSalary) {
+		salary = empSalary;
+	}
+
+	/* 打印信息 */
+	public void printEmployee() {
+		System.out.println("Name:" + name);
+		System.out.println("Age:" + age);
+		System.out.println("Designation:" + designation);
+		System.out.println("Salary:" + salary);
+	}
 }
 ```
 
-正如本指导之前所述，编程从主函数开始。因此，我们为了运行这个 Employee 类就应当建立主函数和类。我们将分别为这些任务创建类。
-
-下面所给的是 EmployeeTest 类，这个类创建了两个 Employee 类的实例，并且为每个对象调用方法从而给每个变量赋值。在 EmployeeTest.java 文件中保存下列代码
+程序都是从main方法开始执行。为了能运行这个程序，必须包含main方法并且创建一个实例对象。  
+下面给出EmployeeTest类，该类实例化2个Employee类的实例，并调用方法设置变量的值。  
+将下面的代码保存在EmployeeTest.java文件中。
 
 ```java
 import java.io.*;
-public class EmployeeTest{
 
-   public static void main(String args[]){
-      /* Create two objects using constructor */
-      Employee empOne = new Employee("James Smith");
-      Employee empTwo = new Employee("Mary Anne");
+public class EmployeeTest {
 
-      // Invoking methods for each object created
-      empOne.empAge(26);
-      empOne.empDesignation("Senior Software Engineer");
-      empOne.empSalary(1000);
-      empOne.printEmployee();
+	public static void main(String args[]) {
+		/* 使用构造器创建两个对象 */
+		Employee empOne = new Employee("James Smith");
+		Employee empTwo = new Employee("Mary Anne");
 
-      empTwo.empAge(21);
-      empTwo.empDesignation("Software Engineer");
-      empTwo.empSalary(500);
-      empTwo.printEmployee();
-   }
+		// 调用这两个对象的成员方法
+		empOne.empAge(26);
+		empOne.empDesignation("Senior Software Engineer");
+		empOne.empSalary(1000);
+		empOne.printEmployee();
+
+		empTwo.empAge(21);
+		empTwo.empDesignation("Software Engineer");
+		empTwo.empSalary(500);
+		empTwo.printEmployee();
+	}
 }
 ```
 
-现在编译两个类然后运行 EmployeeTest，你将会看到如下结果：
+编译这两个文件并且运行EmployeeTest类，可以看到如下结果：
 
 ```
 Name:James Smith
@@ -714,38 +743,339 @@ Designation:Software Engineer
 Salary:500.0
 ```
 
-### 1.5 Java 修饰符的类型
-{:toc #java-1-5}
 
-描述符是你添加到那些定义中来改变他们的意思的关键词。Java 语言有很多描述符，包括以下这些：
+--------
 
-* 可访问修饰符：Java 提供一系列可访问描述符来设定类，变量，方法和构造器的访问级别，四种访问级别如下
-	1. 无描述符，对封装可见。
-	2. private ，仅对类可见
-	3. public， 全部可见
-	4. protected ，对封装和子类可见
 
-* 不可访问修饰符：Java 提供一些不可访问描述符来满足其他功能
-	1. static，用来创造类方法和变量的。
-	2. final，用来最终确定和实施类、方法和变量的。
-	3. synchronized 和 volatile，用来当做线的。
+# 6.Java 修饰符
 
-应用描述符，你可以在类、方法、变量中加入相应关键字。描述符要先于声明，如下面的例子所示：
+Java语言提供了很多修饰符，主要分为以下两类：
+
+* 访问修饰符
+* 非访问修饰符
+
+修饰符用来定义类、方法或者变量，通常放在语句的最前端。我们通过下面的例子来说明：
 
 ```java
 public class className {
-   // ...
-}
-private boolean myFlag;
-static final double weeks = 9.5;
-protected static final int BOXWIDTH = 42;
-public static void main(String[] arguments) {
-   // body of method
+	// ...
+	
+	private boolean myFlag;
+	static final double weeks = 9.5;
+	protected static final int BOXWIDTH = 42;
+
+	public static void main(String[] arguments) {
+	   // 方法体
+	}
 }
 ```
 
-### 1.6 Java 基本数据类型
-{:toc #java-1-6}
+
+--------
+
+
+#### 访问控制修饰符
+{:.no_toc}
+
+Java中，可以使用访问控制符来保护对类、变量、方法和构造方法的访问。Java支持4种不同的访问权限。
+
+* 默认的，也称为 **default**，在同一包内可见，不使用任何修饰符。
+* 私有的，以 **private** 修饰符指定，在同一类内可见。
+* 公有的，以 **public** 修饰符指定，对所有类可见。
+* 受保护的，以 **protected** 修饰符指定，对同一包内的类和所有子类可见。
+
+##### 默认访问修饰符-不使用任何关键字
+{:.no_toc}
+
+使用默认访问修饰符声明的变量和方法，对同一个包内的类是可见的。  
+接口里的变量都隐式声明为public static final,而接口里的方法默认情况下访问权限为public。
+
+实例：如下例所示，变量和方法的声明可以不使用任何修饰符
+
+```java
+
+	String version = "1.5.1";
+
+	boolean processOrder() {
+		return true;
+	}
+```
+
+##### 私有访问修饰符-private
+{:.no_toc}
+
+私有访问修饰符是最严格的访问级别，所以被声明为private的方法、变量和构造方法只能被所属类访问，并且类和接口不能声明为private。  
+声明为私有访问类型的变量只能通过类中公共的getter方法被外部类访问。  
+Private访问修饰符的使用主要用来隐藏类的实现细节和保护类的数据。
+
+实例：下面的类使用了私有访问修饰符
+
+```java
+public class Logger {
+	private String format;
+
+	public String getFormat() {
+		return this.format;
+	}
+
+	public void setFormat(String format) {
+		this.format = format;
+	}
+}
+```
+
+> 实例中，Logger类中的format变量为私有变量，所以其他类不能直接得到和设置该变量的值。为了使其他类能够操作该变量，定义了两个public方法：getFormat() （返回format的值）和setFormat(String)（设置format的值）
+
+##### 公有访问修饰符-public
+{:.no_toc}
+
+被声明为public的类、方法、构造方法和接口能够被任何其他类访问。  
+如果几个相互访问的public类分布在不同的包中，则需要导入相应public类所在的包。由于类的继承性，类所有的公有方法和变量都能被其子类继承。
+
+实例：以下函数使用了公有访问控制
+
+```java
+public static void main(String[] arguments) {
+	   // ...
+	}
+```
+
+> Java程序的main() 方法必须设置成公有的，否则，Java解释器将不能运行该类。
+
+##### 受保护的访问修饰符-protected
+{:.no_toc}
+
+被声明为protected的变量、方法和构造器能被同一个包中的任何其他类访问，也能够被不同包中的子类访问。  
+Protected访问修饰符不能修饰类和接口，方法和成员变量能够声明为protected，但是接口的成员变量和成员方法不能声明为protected。  
+子类能访问Protected修饰符声明的方法和变量，这样就能保护不相关的类使用这些方法和变量。
+
+实例：下面的父类使用了protected访问修饰符，子类重载了父类的openSpeaker()方法
+
+```java
+class AudioPlayer {
+	protected boolean openSpeaker(Speaker sp) {
+		// 实现细节
+	}
+}
+
+class StreamingAudioPlayer {
+	boolean openSpeaker(Speaker sp) {
+		// 实现细节
+	}
+}
+```
+
+> 如果把openSpeaker()方法声明为private，那么除了AudioPlayer之外的类将不能访问该方法。如果把openSpeaker()声明为public，那么所有的类都能够访问该方法。如果我们只想让该方法对其所在类的子类可见，则将该方法声明为protected。
+
+#### 访问控制和继承
+{:.no_toc}
+
+请注意以下方法继承的规则：
+
+* 父类中声明为public的方法在子类中也必须为public。
+* 父类中声明为protected的方法在子类中要么声明为protected，要么声明为public。不能声明为private。
+* 父类中声明为private的方法，不能够被继承。
+
+
+--------
+
+
+#### 非访问修饰符
+{:.no_toc}
+
+为了实现一些其他的功能，Java也提供了许多非访问修饰符。
+
+* static修饰符，用来创建类方法和类变量。
+* Final修饰符，用来修饰类、方法和变量，final修饰的类不能够被继承，修饰的方法不能被继承类重新定义，修饰的变量为常量，是不可修改的。
+* Abstract修饰符，用来创建抽象类和抽象方法。
+* Synchronized和volatile修饰符，主要用于线程的编程。
+
+##### Static修饰符
+{:.no_toc}
+
+*  静态变量：Static关键字用来声明独立于对象的静态变量，无论一个类实例化多少对象，它的静态变量只有一份拷贝。 静态变量也被称为类变量。局部变量能被声明为static变量。
+* 静态方法：Static关键字用来声明独立于对象的静态方法。静态方法不能使用类的非静态变量。静态方法从参数列表得到数据，然后计算这些数据。
+
+对类变量和方法的访问可以直接使用classname.variablename和classname.methodname的方式访问。
+
+实例：如下例所示，static修饰符用来创建类方法和类变量
+
+```java
+public class InstanceCounter {
+	private static int numInstances = 0;
+
+	protected static int getCount() {
+		return numInstances;
+	}
+
+	private static void addInstance() {
+		numInstances++;
+	}
+
+	InstanceCounter() {
+		InstanceCounter.addInstance();
+	}
+
+	public static void main(String[] arguments) {
+		System.out.println("Starting with " + InstanceCounter.getCount() + " instances");
+		for (int i = 0; i < 500; ++i) {
+			new InstanceCounter();
+		}
+		System.out.println("Created " + InstanceCounter.getCount() + " instances");
+	}
+}
+```
+
+编译并运行上面的程序，产生如下结果：
+
+```
+Started with 0 instances
+Created 500 instances
+```
+
+##### Final修饰符
+{:.no_toc}
+
+* **Final变量：**Final变量能被显式地初始化并且只能初始化一次。被声明为final的对象的引用不能指向不同的对象。但是final对象里的数据可以被改变。也就是说final对象的引用不能改变，但是里面的值可以改变。  
+Final修饰符通常和static修饰符一起使用来创建类常量。
+
+  实例：
+
+  ```java
+public class Test {
+	final int value = 10;
+	// 下面是声明常量的实例
+	public static final int BOXWIDTH = 6;
+	static final String TITLE = "Manager";
+
+	public void changeValue() {
+		value = 12; // 将输出一个错误
+	}
+}
+```
+
+* **Final方法：**类中的Final方法可以被子类继承，但是不能被子类修改。声明final方法的主要目的是防止该方法的内容被修改。
+
+  实例：如下所示，使用final修饰符声明方法
+
+  ```java
+public class Test {
+	public final void changeName() {
+		// 方法体
+	}
+}
+```
+
+* **Final类：**Final类不能被继承，没有类能够继承final类的任何特性。
+
+  实例：
+
+  ```java
+public final class Test {
+	// 类体
+}
+```
+
+##### Abstract修饰符
+{:.no_toc}
+
+* **抽象类：**抽象类不能用来实例化对象，声明抽象类的唯一目的是为了将来对该类进行扩充。
+一个类不能同时被abstract和final修饰。如果一个类包含抽象方法，那么该类一定要声明为抽象类，否则将出现编译错误。
+抽象类可以包含抽象方法和非抽象方法。
+
+  实例：
+
+  ```java
+abstract class Caravan {
+	private double price;
+	private String model;
+	private String year;
+
+	public abstract void goFast(); // 抽象方法
+
+	public abstract void changeColor();
+}
+```
+
+
+* 抽象方法：抽象方法是一种没有任何实现的方法，该方法的的具体实现由子类提供。抽象方法不能被声明成final和strict。
+任何继承抽象类的子类必须实现父类的所有抽象方法，除非该子类也是抽象类。
+如果一个类包含若干个抽象方法，那么该类必须声明为抽象类。抽象类可以不包含抽象方法。
+抽象方法的声明以分号结尾，例如：`public abstract sample()`;
+
+  实例：
+
+  ```java
+public abstract class SuperClass {
+	abstract void m(); // 抽象方法
+}
+
+  class SubClass extends SuperClass {
+	// 实现抽象方法
+	void m() {
+	.........
+	}
+}
+```
+
+##### Synchronized修饰符
+{:.no_toc}
+
+Synchronized关键字声明的方法同一时间只能被一个线程访问。Synchronized修饰符可以应用于四个访问修饰符。
+
+实例：
+
+```java
+public synchronized void showDetails() {
+.......
+}
+```
+
+##### Transient修饰符
+{:.no_toc}
+
+序列化的对象包含被transient修饰的实例变量时，java虚拟机(JVM)跳过该特定的变量。  
+该修饰符包含在定义变量的语句中，用来预处理类和变量的数据类型。
+
+实例：
+
+```java
+public transient int limit = 55;   // will not persist
+public int b; // will persist
+```
+
+##### Volatile修饰符
+{:.no_toc}
+
+Volatile 修饰的成员变量在每次被线程访问时，都强制从共享内存中重新读取该成员变量的值。而且，当成员变量发生变化时，会强制线程将变化值回写到共享内存。这样在任何时刻，两个不同的线程总是看到某个成员变量的同一个值。  
+一个volatile对象引用可能是null。
+
+实例：
+
+```java
+public class MyRunnable implements Runnable {
+	private volatile boolean active;
+
+	public void run() {
+		active = true;
+		while (active) // 第一行
+		{
+			// 代码
+		}
+	}
+
+	public void stop() {
+		active = false; // 第二行
+	}
+}
+```
+> 通常情况下，在一个线程调用 run() 方法（在 Runnable 开启的线程），在另一个线程调用 stop() 方法。 如果 第一行 中缓冲区的 active 值被使用，那么在 第二行 的 active 值为 false 时循环不会停止。但是以上代码中我们使用了 volatile 修饰 active，所以该循环会停止。
+
+
+--------
+
+
+# 7. Java 基本数据类型
 
 变量就是用来储存值而保留的内存位置。这就意味着当你创建一个变量时就会在内存中占用一定的空间。
 

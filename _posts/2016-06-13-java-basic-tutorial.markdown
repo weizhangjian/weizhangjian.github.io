@@ -123,7 +123,7 @@ Java语言尽量保证系统内存在1G以上，其他工具如下所示：
 
 视频演示如下所示：  
 <video style="width: 80%;" controls >
-    <source src="http://static.runoob.com/video/javadownload.mp4" type="video/mp4">
+    <source src="http://weizhangjian.github.io/img/in-post/post-java-basic-tutorial/Eclipse-java.mp4" type="video/mp4">
 </video>
 
 

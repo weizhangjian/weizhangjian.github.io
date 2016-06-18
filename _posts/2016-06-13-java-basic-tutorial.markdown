@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "Java 基础教程"
+title:      "Java 基础教程（一）"
 subtitle:   " \"Java语言快速入门\""
 date:       2016-06-13 00:00:00
 author:     "JustinWei"
@@ -35,7 +35,7 @@ public class HelloWorld {
 
 <ul class="pager">
 <li class="previous">
-<a href="http://www.runoob.com/try/showjava.php?filename=HelloWorld" data-toggle="tooltip" data-placement="top" title="运行实例">运行实例</a>
+<a target="_blank" href="http://www.runoob.com/try/showjava.php?filename=HelloWorld" data-toggle="tooltip" data-placement="top" title="运行实例">运行实例</a>
 </li>
 </ul>
 
@@ -265,8 +265,9 @@ Java所有的组成部分都需要名字。类名、变量名以及方法名都�
 ##### Java 枚举
 {:.no_toc}
 
-Java 5.0引入了枚举，枚举限制变量只能是预先设定好的值。使用枚举可以减少代码中的bug。  
-例如，我们为果汁店设计一个程序，它将限制果汁为小杯、中杯、大杯。这就意味着它不允许顾客点除了这三种尺寸外的果汁。
+Java 5.0引入了枚举，枚举限制变量只能是预先设定好的值。使用枚举可以减少代码中的bug。
+
+**实例：**我们为果汁店设计一个程序，它将限制果汁为小杯、中杯、大杯。这就意味着它不允许顾客点除了这三种尺寸外的果汁。
 
 ```java
 class FreshJuice {
@@ -390,7 +391,7 @@ public class HelloWorld {
 --------
 
 
-#### 继承
+##### 继承
 {:.no_toc}
 
 在Java中，一个类可以由其他类派生。如果你要创建一个类，而且已经存在一个类具有你所需要的属性或方法，那么你可以将新创建的类继承该类。  
@@ -484,8 +485,9 @@ public class Dog {
 {:.no_toc}
 
 每个类都有构造方法。如果没有显式地为类定义构造方法，Java编译器将会为该类提供一个默认构造方法。这个构造方法没有参数,修饰符是public并且方法体为空。  
-在创建一个对象的时候，至少要调用一个构造方法。构造方法的名称必须与类同名，一个类可以有多个构造方法。  
-下面是一个构造方法示例：
+在创建一个对象的时候，至少要调用一个构造方法。构造方法的名称必须与类同名，一个类可以有多个构造方法。
+
+**实例：**
 
 ```java
 public class Puppy {
@@ -527,7 +529,7 @@ public class Puppy {
 2. 实例化：使用关键字new来创建一个对象。
 3. 初始化：使用new创建对象时，会调用构造方法初始化对象。
 
-下面给出了一个创造对象的例子：
+**实例：**
 
 ```java
 public class Puppy {
@@ -565,7 +567,7 @@ ObjectReference.variableName;
 ObjectReference.MethodName();
 ```
 
-实例：下面的例子展示如何访问实例变量和调用成员方法
+**实例：**下面的例子展示如何访问实例变量和调用成员方法
 
 ```java
 public class Puppy {
@@ -790,7 +792,7 @@ Java中，可以使用访问控制符来保护对类、变量、方法和构造�
 使用默认访问修饰符声明的变量和方法，对同一个包内的类是可见的。  
 接口里的变量都隐式声明为public static final,而接口里的方法默认情况下访问权限为public。
 
-实例：如下例所示，变量和方法的声明可以不使用任何修饰符
+**实例：**如下例所示，变量和方法的声明可以不使用任何修饰符
 
 ```java
 
@@ -808,7 +810,7 @@ Java中，可以使用访问控制符来保护对类、变量、方法和构造�
 声明为私有访问类型的变量只能通过类中公共的getter方法被外部类访问。  
 Private访问修饰符的使用主要用来隐藏类的实现细节和保护类的数据。
 
-实例：下面的类使用了私有访问修饰符
+**实例：**下面的类使用了私有访问修饰符
 
 ```java
 public class Logger {
@@ -832,7 +834,7 @@ public class Logger {
 被声明为public的类、方法、构造方法和接口能够被任何其他类访问。  
 如果几个相互访问的public类分布在不同的包中，则需要导入相应public类所在的包。由于类的继承性，类所有的公有方法和变量都能被其子类继承。
 
-实例：以下函数使用了公有访问控制
+**实例：**以下函数使用了公有访问控制
 
 ```java
 public static void main(String[] arguments) {
@@ -849,7 +851,7 @@ public static void main(String[] arguments) {
 Protected访问修饰符不能修饰类和接口，方法和成员变量能够声明为protected，但是接口的成员变量和成员方法不能声明为protected。  
 子类能访问Protected修饰符声明的方法和变量，这样就能保护不相关的类使用这些方法和变量。
 
-实例：下面的父类使用了protected访问修饰符，子类重载了父类的openSpeaker()方法
+**实例：**下面的父类使用了protected访问修饰符，子类重载了父类的openSpeaker()方法
 
 ```java
 class AudioPlayer {
@@ -898,7 +900,7 @@ class StreamingAudioPlayer {
 
 对类变量和方法的访问可以直接使用classname.variablename和classname.methodname的方式访问。
 
-实例：如下例所示，static修饰符用来创建类方法和类变量
+**实例：**如下例所示，static修饰符用来创建类方法和类变量
 
 ```java
 public class InstanceCounter {
@@ -939,7 +941,7 @@ Created 500 instances
 * **Final变量：**Final变量能被显式地初始化并且只能初始化一次。被声明为final的对象的引用不能指向不同的对象。但是final对象里的数据可以被改变。也就是说final对象的引用不能改变，但是里面的值可以改变。  
 Final修饰符通常和static修饰符一起使用来创建类常量。
 
-  实例：
+  **实例：**
 
   ```java
 public class Test {
@@ -956,7 +958,7 @@ public class Test {
 
 * **Final方法：**类中的Final方法可以被子类继承，但是不能被子类修改。声明final方法的主要目的是防止该方法的内容被修改。
 
-  实例：如下所示，使用final修饰符声明方法
+  **实例：**如下所示，使用final修饰符声明方法
 
   ```java
 public class Test {
@@ -968,7 +970,7 @@ public class Test {
 
 * **Final类：**Final类不能被继承，没有类能够继承final类的任何特性。
 
-  实例：
+  **实例：**
 
   ```java
 public final class Test {
@@ -983,7 +985,7 @@ public final class Test {
 一个类不能同时被abstract和final修饰。如果一个类包含抽象方法，那么该类一定要声明为抽象类，否则将出现编译错误。
 抽象类可以包含抽象方法和非抽象方法。
 
-  实例：
+  **实例：**
 
   ```java
 abstract class Caravan {
@@ -1003,7 +1005,7 @@ abstract class Caravan {
 如果一个类包含若干个抽象方法，那么该类必须声明为抽象类。抽象类可以不包含抽象方法。
 抽象方法的声明以分号结尾，例如：`public abstract sample()`;
 
-  实例：
+  **实例：**
 
   ```java
 public abstract class SuperClass {
@@ -1023,7 +1025,7 @@ public abstract class SuperClass {
 
 Synchronized关键字声明的方法同一时间只能被一个线程访问。Synchronized修饰符可以应用于四个访问修饰符。
 
-实例：
+**实例：**
 
 ```java
 public synchronized void showDetails() {
@@ -1037,7 +1039,7 @@ public synchronized void showDetails() {
 序列化的对象包含被transient修饰的实例变量时，java虚拟机(JVM)跳过该特定的变量。  
 该修饰符包含在定义变量的语句中，用来预处理类和变量的数据类型。
 
-实例：
+**实例：**
 
 ```java
 public transient int limit = 55;   // will not persist
@@ -1050,7 +1052,7 @@ public int b; // will persist
 Volatile 修饰的成员变量在每次被线程访问时，都强制从共享内存中重新读取该成员变量的值。而且，当成员变量发生变化时，会强制线程将变化值回写到共享内存。这样在任何时刻，两个不同的线程总是看到某个成员变量的同一个值。  
 一个volatile对象引用可能是null。
 
-实例：
+**实例：**
 
 ```java
 public class MyRunnable implements Runnable {
@@ -1077,118 +1079,242 @@ public class MyRunnable implements Runnable {
 
 # 7. Java 基本数据类型
 
-变量就是用来储存值而保留的内存位置。这就意味着当你创建一个变量时就会在内存中占用一定的空间。
+变量就是申请内存来存储值。也就是说，当创建变量的时候，需要在内存中申请空间。  
+内存管理系统根据变量的类型为变量分配存储空间，分配的空间只能用来储存该类型数据。  
+因此，通过定义不同类型的变量，可以在内存中储存整数、小数或者字符。
 
-基于变量的数据类型，操作系统会进行内存分配并且决定什么将被储存在保留内存中。因此，通过给变量分配不同的数据类型，你可以在这些变量中存储整数，小数或者字字母。
+Java的两大数据类型:
 
-Java 中有两种有效地数据类型：
-
-* 原始数据类型
+* 内置数据类型
 * 引用数据类型()
 
-#### 原始数据类型
+
+--------
+
+
+#### 内置数据类型
 {:.no_toc}
 
-Java 支持 8 种原始数据类型。原始数据类型是由该语言预先定义的并用关键词命名的。下面让我们深入学习一下这 8 种数据类型。
+Java语言提供了八种基本类型。六种数字类型（四个整数型，两个浮点型），一种字符类型，还有一种布尔型。
 
 ##### 字节型（byte）
 {:.no_toc}
 
-* 字节型是一种 8 位有正负的二进制整数
+* byte数据类型是8位、有符号的，以二进制补码表示的整数
 * 最小值是 -128(-2^7)
 * 最大值是 127(2^7-1)
 * 默认值为 0
-* 字节型数据类型主要是为了在大型数组内节省空间，主要是替代整数由于字节型比整数小 4 倍。
-* 例如：byte a = 100 , byte b = -50
+* byte类型用在大型数组中节约空间，主要代替整数，因为byte变量占用的空间只有int类型的四分之一
+* 例如：`byte a = 100 , byte b = -50`
 
 ##### 短整数（short）
 {:.no_toc}
 
-* 短整数是一种 16 位有正负的二进制整数
+* short数据类型是16位、有符号的，以二进制补码表示的整数
 * 最小值是 -32768(-2^15)
 * 最大值是 32767(2^15-1)
-* 短整数类型的数据也可以像字节型一样用于节省空间。短整数比整数小两倍
+* Short数据类型也可以像byte那样节省空间。一个short变量是int型变量所占空间的二分之一
 * 默认值为 0
-* 例如：short s = 10000, short r = -20000
+* 例如：`short s = 10000, short r = -20000`
 
 ##### 整数型（int）
 {:.no_toc}
 
-* 整数型是一种 32 位有正负的二进制整数
+* long数据类型是64位、有符号的，以二进制补码表示的整数
 * 最小值是 - 2,147,483,648(-2^31)
 * 最大值是 2,147,483,647(2^31 -1)
-* 整数型一般默认被应用于整数值除非担心内存不够用。
+* 一般地整型变量默认为int类型，除非担心内存不够用
 * 默认值为 0
-* 例如：int a = 100000, int b = -200000
+* 例如：`int a = 100000, int b = -200000`
 
 ##### 长整型（long）
 {:.no_toc}
 
-* 长整型是一种 64 位有正负的二进制整数
+* long数据类型是64位、有符号的，以二进制补码表示的整数
 * 最小值是 -9,223,372,036,854,775,808(-2^63)
 * 最大值是 9,223,372,036,854,775,807 (2^63 -1)
-* 这种数据类型一般是在需要比整数型范围更大时应用。
+* 这种类型主要使用在需要比较大整数的系统上
 * 默认值为 0L
-* 例如：long a = 100000L, int b = -200000L
+* 例如：`long a = 100000L, int b = -200000L`
 
 ##### 浮点型（float）
 {:.no_toc}
 
-* 浮点型数据是一种单精度的 32 位 IEEE 754 标准下的浮点数据。
-*浮点型数据主要是为了在大型浮点数字数组中节约内存。
-* 默认值是 0.0f。
-* 浮点型数据不能用于如货币这样的精确数据。
-* 例如：float f1 = 234.5f
+* float数据类型是单精度、32位、符合IEEE 754标准的浮点数
+* float在储存大型浮点数组的时候可节省内存空间
+* 默认值是 0.0f
+* 浮点数不能用来表示精确的值，如货币
+* 例如：`float f1 = 234.5f`
 
 ##### 双精度型（double）
 {:.no_toc}
 
-* 双精度型数据是一种双精度的 64 位 IEEE 754 标准下的浮点数据。
-* 这种数据类型主要是默认被用于表示小数的值，一般是默认的选择。
-* 双精度型数据不能用于如货币这样的精确数据。
+* double数据类型是双精度、64位、符合IEEE 754标准的浮点数
+* 浮点数的默认类型为double类型
+* double类型同样不能表示精确的值，如货币
 * 默认值是 0.0d
-* 例如：double d1 = 123.4
+* 例如：`double d1 = 123.4`
 
 ##### 布尔型（boolean）
 {:.no_toc}
 
-* 布尔型数据代表一个信息比特。
-* 它只有两个可能的值：真（true）和假（false）
-* 这种数据类型用于真假条件下的简单标记。
-* 默认值是假（false）
-* 例如：boolean one = true
+* boolean数据类型表示一位的信息
+* 只有两个取值：true和false
+* 这种类型只作为一种标志来记录true/false情况
+* 默认值是false
+* 例如：`boolean one = true`
 
 ##### 字符型（char）
 {:.no_toc}
 
-* 字符型数据是简单的 16 位 Unicode 标准下的字符。
-* 最小值是： '\u0000' (或 0)。
-* 最大值是： '\uffff' (或 65,535 )。
-* 字符型数据可以用来储存任意字母。
-* 例如： char letter A（字符型的字母A） ='A'
+* char类型是一个单一的16位Unicode字符
+* 最小值是： '\u0000' (或 0)
+* 最大值是： '\uffff' (或 65,535 )
+* char数据类型可以储存任何字符
+* 例如： `char letter A ='A'`
+
+**实例：**  
+对于数值类型的基本类型的取值范围，我们无需强制去记忆，因为它们的值都已经以常量的形式定义在对应的包装类中了。请看下面的例子：
+
+```java
+public class PrimitiveTypeTest {
+	public static void main(String[] args) {
+		// byte
+		System.out.println("基本类型：byte 二进制位数：" + Byte.SIZE);
+		System.out.println("包装类：java.lang.Byte");
+		System.out.println("最小值：Byte.MIN_VALUE=" + Byte.MIN_VALUE);
+		System.out.println("最大值：Byte.MAX_VALUE=" + Byte.MAX_VALUE);
+		System.out.println();
+
+		// short
+		System.out.println("基本类型：short 二进制位数：" + Short.SIZE);
+		System.out.println("包装类：java.lang.Short");
+		System.out.println("最小值：Short.MIN_VALUE=" + Short.MIN_VALUE);
+		System.out.println("最大值：Short.MAX_VALUE=" + Short.MAX_VALUE);
+		System.out.println();
+
+		// int
+		System.out.println("基本类型：int 二进制位数：" + Integer.SIZE);
+		System.out.println("包装类：java.lang.Integer");
+		System.out.println("最小值：Integer.MIN_VALUE=" + Integer.MIN_VALUE);
+		System.out.println("最大值：Integer.MAX_VALUE=" + Integer.MAX_VALUE);
+		System.out.println();
+
+		// long
+		System.out.println("基本类型：long 二进制位数：" + Long.SIZE);
+		System.out.println("包装类：java.lang.Long");
+		System.out.println("最小值：Long.MIN_VALUE=" + Long.MIN_VALUE);
+		System.out.println("最大值：Long.MAX_VALUE=" + Long.MAX_VALUE);
+		System.out.println();
+
+		// float
+		System.out.println("基本类型：float 二进制位数：" + Float.SIZE);
+		System.out.println("包装类：java.lang.Float");
+		System.out.println("最小值：Float.MIN_VALUE=" + Float.MIN_VALUE);
+		System.out.println("最大值：Float.MAX_VALUE=" + Float.MAX_VALUE);
+		System.out.println();
+
+		// double
+		System.out.println("基本类型：double 二进制位数：" + Double.SIZE);
+		System.out.println("包装类：java.lang.Double");
+		System.out.println("最小值：Double.MIN_VALUE=" + Double.MIN_VALUE);
+		System.out.println("最大值：Double.MAX_VALUE=" + Double.MAX_VALUE);
+		System.out.println();
+
+		// char
+		System.out.println("基本类型：char 二进制位数：" + Character.SIZE);
+		System.out.println("包装类：java.lang.Character");
+		// 以数值形式而不是字符形式将Character.MIN_VALUE输出到控制台
+		System.out.println("最小值：Character.MIN_VALUE=" + (int) Character.MIN_VALUE);
+		// 以数值形式而不是字符形式将Character.MAX_VALUE输出到控制台
+		System.out.println("最大值：Character.MAX_VALUE=" + (int) Character.MAX_VALUE);
+	}
+}
+```
+
+<ul class="pager">
+<li class="previous">
+<a target="_blank" href="http://www.runoob.com/try/runcode.php?filename=PrimitiveTypeTest&type=java" data-toggle="tooltip" data-placement="top" title="运行实例">运行实例</a>
+</li>
+</ul>
+
+编译以上代码输出结果如下所示：
+
+```
+基本类型：byte 二进制位数：8
+包装类：java.lang.Byte
+最小值：Byte.MIN_VALUE=-128
+最大值：Byte.MAX_VALUE=127
+
+基本类型：short 二进制位数：16
+包装类：java.lang.Short
+最小值：Short.MIN_VALUE=-32768
+最大值：Short.MAX_VALUE=32767
+
+基本类型：int 二进制位数：32
+包装类：java.lang.Integer
+最小值：Integer.MIN_VALUE=-2147483648
+最大值：Integer.MAX_VALUE=2147483647
+
+基本类型：long 二进制位数：64
+包装类：java.lang.Long
+最小值：Long.MIN_VALUE=-9223372036854775808
+最大值：Long.MAX_VALUE=9223372036854775807
+
+基本类型：float 二进制位数：32
+包装类：java.lang.Float
+最小值：Float.MIN_VALUE=1.4E-45
+最大值：Float.MAX_VALUE=3.4028235E38
+
+基本类型：double 二进制位数：64
+包装类：java.lang.Double
+最小值：Double.MIN_VALUE=4.9E-324
+最大值：Double.MAX_VALUE=1.7976931348623157E308
+
+基本类型：char 二进制位数：16
+包装类：java.lang.Character
+最小值：Character.MIN_VALUE=0
+最大值：Character.MAX_VALUE=65535
+```
+
+> Float和Double的最小值和最大值都是以科学记数法的形式输出的，结尾的"E+数字"表示E之前的数字要乘以10的多少次方。比如3.14E3就是3.14 × 10^3 =3140，3.14E-3 就是 3.14 x 10^-3 =0.00314。  
+> 实际上，JAVA中还存在另外一种基本类型void，它也有对应的包装类 java.lang.Void，不过我们无法直接对它们进行操作。
+
+
+--------
+
 
 #### 引用数据类型
 {:.no_toc}
 
-* 引用数据类型是由类的编辑器定义的。他们是用于访问对象的。这些变量被定义为不可更改的特定类型。例如：Employee， Puppy 等等。
-* 类对象和数组变量就是这种引用数据类型。
-* 任何引用数据类型的默认值都为空。
-* 一个引用数据类型可以被用于任何声明类型和兼容类型的对象。
-* 例如：Animal animal = new Animal("giraffe")；
+* 引用类型变量由类的构造函数创建，可以使用它们访问所引用的对象。这些变量在声明时被指定为一个特定的类型，比如Employee、Pubby等。变量一旦声明后，类型就不能被改变了。
+* 对象、数组都是引用数据类型。
+* 所有引用类型的默认值都是null。
+* 一个引用变量可以用来引用与任何与之兼容的类型。
+* 例如：`Site site = new Site("Runoob")；`
 
-Java 常量
-常量是代表固定值的源代码。他们直接以代码的形式代表而没有任何估计。
 
-常量可以被分配给任意的原始变量类型。例如：
+--------
+
+
+#### Java 常量
+{:.no_toc}
+
+常量是在程序运行时，不会被修改的量。  
+在 Java 中使用 final 关键字来修饰常量，声明方式和变量类似：
+
+    final double PI = 3.1415927;
+    
+虽然常量名也可以用小写，但为了便于识别，通常使用大写字母表示常量。  
+字面量可以赋给任何内置类型的变量。例如：
 
 ```
 byte a = 68;
-char a = 'A'
+char a = 'A';
 ```
 
-字节型，整数型，长整型和短整型也可以由十进制，十六进制和八进制计数系统表示。
-
-当用这些技术系统表示直接量时，前缀 0 是为了标明八进制，前缀 0x 是为了标明十六进制。例如：
+byte、int、long、和short都可以用十进制、16进制以及8进制的方式来表示。  
+当使用常量的时候，前缀0表示8进制，而前缀0x代表16进制。例如：
 
 ```
 int decimal = 100;
@@ -1196,7 +1322,7 @@ int octal = 0144;
 int hexa = 0x64;
 ```
 
-Java 中的字符串型常量的规定和其他大多数语言一样，也是要写在双引号中间。字符串型直接量的例子如下：
+和其他语言一样，Java的字符串常量也是包含在两个引号之间的字符序列。下面是字符串型字面量的例子：
 
 ```
 "Hello World"
@@ -1204,14 +1330,14 @@ Java 中的字符串型常量的规定和其他大多数语言一样，也是要
 "\"This is in quotes\""
 ```
 
-字符和字符串型常量可以包含任意的 Unicode 字母。例如：
+字符串常量和字符常量都可以包含任何Unicode字符。例如：
 
 ```
 char a = '\u0001';
 String a = "\u0001";
 ```
 
-Java 语言也支持一些特殊的转义序列的字符和字符串直接量。他们是：
+Java语言支持一些特殊的转义字符序列。
 
 | 转义字符 | 含义 |
 | :---: | :---: |
@@ -1223,192 +1349,1133 @@ Java 语言也支持一些特殊的转义序列的字符和字符串直接量。
 |`\t`|	tab|
 |`\"`|	双引号|
 |`\'`|	单引号|
-|`\`|	反斜杠|
+|`\\`|	反斜杠|
 |`\ddd`|八进制字符 (ddd)|
 |`\uxxxx`|十六进制 UNICODE 字符 (xxxx)|
 
+> 注意：String不属于8种基本数据类型（byte, char, short, int, float, long, double, boolean），String是一个对象，因为对象的默认值是null，所以String的默认值也是null；但它又是一种特殊的对象，有其它对象没有的一些特性。new String()和new String(“”)都是申明一个新的空字符串，是空串不是null；
+
 # 8. Java 变量类型
-{:toc #java-1-7}
 
-变量可以给我们提供我们程序可以操纵的命名的存储。Java 中的每种变量都有特定的类型，这决定了变量的大小和它的设计占用内存空间；这一些列的值可以存储在那个内存空间中；变量可以应用的操作。
+在Java语言中，所有的变量在使用前必须声明。声明变量的基本格式如下：
 
-在使用前你必须现将所要使用的变量进行声明。声明变量的基本格式如下：
-
-    data type variable [ = value][, variable [= value] ...] ;
+    type identifier [ = value][, identifier [= value] ...] ;
 
 
-这里的 data type 是 Java 的一种数据类型，variable 是一种变量的名称。要声明一个以上的特定变量类型，你可以采用逗号分隔开。
+格式说明：type为Java数据类型。identifier是变量名。可以使用逗号隔开来声明多个同类型变量。
 
-下面是 Java 中有效的变量声明和赋值的例子：
+以下列出了一些变量的声明实例。注意有些包含了初始化过程。
 
 ```java
-int a, b, c; // Declares three ints, a, b, and c.
-int a = 10, b = 10; // Example of initialization
-byte B = 22; // initializes a byte type variable B.
-double pi = 3.14159; // declares and assigns a value of PI.
-char a = 'a'; // the char variable a iis initialized with value 'a'
+int a, b, c;			// 声明三个int型整数：a、 b、c
+int d = 3, e, f = 5;	// 声明三个整数并赋予初值
+byte z = 22;			// 声明并初始化 z
+String s = "runoob";	// 声明并初始化字符串 s
+double pi = 3.14159;	// 声明了双精度浮点型变量 pi
+char x = 'x';			// 声明变量 x 的值是字符 'x'
 ```
 
-本章将介绍 Java 中的各种可用的变量类型。Java 中共有三种变量：
+Java语言支持的变量类型有：
 
-* 本地变量
+* 局部变量
 * 实例变量
-* 类、静态变量
+* 类变量
 
-#### 本地变量
+
+--------
+
+
+#### 局部变量
 {:.no_toc}
 
+* 局部变量声明在方法、构造方法或者语句块中；
+* 局部变量在方法、构造方法、或者语句块被执行的时候创建，当它们执行完成后，变量将会被销毁；
+* 访问修饰符不能用于局部变量；
+* 局部变量只在声明它的方法、构造方法或者语句块中可见；
+* 局部变量是在栈上分配的。
+* 局部变量没有默认值，所以局部变量被声明后，必须经过初始化，才可以使用。
 
-*本地变量在方法、构造器或者块中声明
-*本地变量在方法、构造器或者块进入时被创建，一旦退出该变量就会被摧毁
-*可访问描述符不能用于本地变量
-*本地变量仅在已经声明的方法、构造器或者块中可见
-*本地变量在栈深度内部实施
-*本地变量没有默认值，因此本地变量必须被声明并且在第一次使用前要给它赋值
-
-##### 例子
-{:.no_toc}
-
-这里，age（年龄）是本地变量。这是在 pupAge() 方法下定义的，它的范围仅限于这个方法。
+**实例1：**  
+在以下实例中age是一个局部变量。定义在pubAge()方法中，它的作用域就限制在这个方法中。
 
 ```java
-public class Test{
-   public void pupAge(){
-      int age = 0;
-      age = age + 7;
-      System.out.println("Puppy age is : " + age);
-   }
+public class Test {
+	public void pupAge() {
+		int age = 0;
+		age = age + 7;
+		System.out.println("小狗的年龄是：" + age);
+	}
 
-   public static void main(String args[]){
-      Test test = new Test();
-      test.pupAge();
-   }
+	public static void main(String args[]) {
+		Test test = new Test();
+		test.pupAge();
+	}
 }
 ```
-上述代码会输出如下结果：
+编译以上代码输出结果如下所示：
 
-    Puppy age is: 7
+    小狗的年龄是：7
 
-##### 例子
-{:.no_toc}
-
-下面的例子使用了本地变量 age 但是没有进行初始化，所以在编辑是就会显示错误。
+**实例2：**  
+在下面的例子中age变量没有初始化，所以在编译时会出错：
 
 ```java
-public class Test{
-   public void pupAge(){
-      int age;
-      age = age + 7;
-      System.out.println("Puppy age is : " + age);
-   }
+public class Test {
+	public void pupAge() {
+		int age;
+		age = age + 7;
+		System.out.println("小狗的年龄是 : " + age);
+	}
 
-   public static void main(String args[]){
-      Test test = new Test();
-      test.pupAge();
-   }
+	public static void main(String args[]) {
+		Test test = new Test();
+		test.pupAge();
+	}
 }
 ```
-编辑时会产生如下错误：
+编译以上代码输出结果如下所示：
 
 ```
-Test.java:4:variable number might not have been initialized
-age = age + 7;
-^
-1 error
+Exception in thread "main" java.lang.Error: 无法解析的编译问题：
+	局部变量 age 可能尚未初始化
+
+	at myFirstJavaProgram.Test.pupAge(Test.java:6)
+	at myFirstJavaProgram.Test.main(Test.java:12)
+
 ```
+
+
+--------
+
 
 #### 实例变量
 {:.no_toc}
 
-* 实例变量在类中声明，但是它在方法、构造器或者块外。
-* 当堆中的对象被分配了一个空间时，每个实例变量的位置就被创建了。
-* 当对象采用关键字“ new ”创建时实例变量就被创建了，当对象被销毁时它也就被销毁了。
-* 实例变量的值必须被一个以上的方法、构造器或者块，或者类中必须出现的对象的状态的重要部分所引用。
-* 实例变量可以在类水平上在使用前或者使用后声明。
-* 实例变量可以用可访问描述符。
-* 实例变量对类中的所有方法、构造器或者块可见。一般来讲，推荐将这些变量私有（访问层面）。然而子类的可见性可用可访问描述符给予那些变量。
-* 实例变量有默认值。数字的默认值为零，布尔型默认值为假，对象引用默认值为空。在声明或者构造器内可以进行赋值。
-* 实例变量可以采用直接在类中叫名字方式访问。然而在静态方法和不同的类（实例变量可以被访问）中应当使用完全限定名称。ObjectReference.VariableName
+* 实例变量在类中声明，但在方法、构造方法和语句块之外。
+* 当一个对象被实例化之后，每个实例变量的值就跟着确定。
+* 实例变量在对象创建的时候创建，在对象被销毁的时候销毁。
+* 实例变量的值应该至少被一个方法、构造方法或者语句块引用，使得外部能够通过这些方式获取实例变量信息。
+* 实例变量可以声明在使用前或者使用后。
+* 访问修饰符可以修饰实例变量。
+* 实例变量对于类中的方法、构造方法或者语句块是可见的。一般情况下应该把实例变量设为私有。通过使用访问修饰符可以使实例变量对子类可见。
+* 实例变量具有默认值。数值型变量的默认值是0，布尔型变量的默认值是false，引用类型变量的默认值是null。变量的值可以在声明时指定，也可以在构造方法中指定。
+* 实例变量可以直接通过变量名访问。但在静态方法以及其他类中，就应该使用完全限定名：ObejectReference.VariableName。
 
-##### 例子
-{:.no_toc}
+**实例：**
 
 ```java
 import java.io.*;
 
-public class Employee{
-   // this instance variable is visible for any child class.
-   public String name;
+public class Employee {
+	// 这个成员变量对子类可见
+	public String name;
+	// 私有变量，仅在该类可见
+	private double salary;
 
-   // salary  variable is visible in Employee class only.
-   private double salary;
+	// 在构造器中对name赋值
+	public Employee(String empName) {
+		name = empName;
+	}
 
-   // The name variable is assigned in the constructor.
-   public Employee (String empName){
-      name = empName;
-   }
+	// 设定salary的值
+	public void setSalary(double empSal) {
+		salary = empSal;
+	}
 
-   // The salary variable is assigned a value.
-   public void setSalary(double empSal){
-      salary = empSal;
-   }
+	// 打印信息
+	public void printEmp() {
+		System.out.println("name  : " + name);
+		System.out.println("salary :" + salary);
+	}
 
-   // This method prints the employee details.
-   public void printEmp(){
-      System.out.println("name  : " + name );
-      System.out.println("salary :" + salary);
-   }
-
-   public static void main(String args[]){
-      Employee empOne = new Employee("Ransika");
-      empOne.setSalary(1000);
-      empOne.printEmp();
-   }
+	public static void main(String args[]) {
+		Employee empOne = new Employee("Ransika");
+		empOne.setSalary(1000);
+		empOne.printEmp();
+	}
 }
 ```
 
-上述代码会输出如下结果：
+编译以上代码输出结果如下所示：
 
 ```
 name  : Ransika
 salary :1000.0
 ```
 
-#### 类、静态变量
+
+--------
+
+
+#### 类变量（静态变量）
 {:.no_toc}
 
-* 类变量也叫静态变量，它是在类中用 static 关键字声明的，但是它在方法、构造器或者块之外。
-* 每个类中只有一个类变量，不管这个类有多少对象。
-* 除了作为常量被声明之外，类变量很少被应用。常量是被作为 public、private, final 和 static 被声明的变量。实例变量的初始值不会被改变。
-* 静态变量存储在静态内存中，很少采用静态变量而不是声明结束或者用常量public 或 private 之一。
-* 静态变量随着程序的开始和结束而开始和结束。
-* 可见性和实例变量相似。然而大多数静态变量被声明为public由于他们必须为类的使用者所用。
-* 默认值和实例变量相似。对于数字的默认值为零，布尔型默认值为假，对象引用默认值为空。在声明或者构造器内可以进行赋值。除此之外，可以在特殊的静态初始化区赋值。
-* 静态变量可以用类的名称访问。ClassName.VariableName
-* 当静态变量被作为 public static final 声明时，变量（常量）名称都要用大写字母。如果静态变量不是 public 和 final，它的命名方法和实例变量和本地变量相同。
+* 类变量也称为静态变量，在类中以static关键字声明，但必须在方法构造方法和语句块之外。
+* 无论一个类创建了多少个对象，类只拥有类变量的一份拷贝。
+* 静态变量除了被声明为常量外很少使用。常量是指声明为public/private，final和static类型的变量。常量初始化后不可改变。
+* 静态变量储存在静态存储区。经常被声明为常量，很少单独使用static声明变量。
+* 静态变量在程序开始时创建，在程序结束时销毁。
+* 与实例变量具有相似的可见性。但为了对类的使用者可见，大多数静态变量声明为public类型。
+* 默认值和实例变量相似。数值型变量默认值是0，布尔型默认值是false，引用类型默认值是null。变量的值可以在声明的时候指定，也可以在构造方法中指定。此外，静态变量还可以在静态语句块中初始化。
+* 静态变量可以通过：ClassName.VariableName的方式访问。
+* 类变量被声明为public static final类型时，类变量名称必须使用大写字母。如果静态变量不是public和final类型，其命名方式与实例变量以及局部变量的命名方式一致。
 
-##### 例子
-{:.no_toc}
+**实例：**
 
 ```java
 import java.io.*;
 
-public class Employee{
-   // salary  variable is a private static variable
-   private static double salary;
+public class Employee {
+	// salary是静态的私有变量
+	private static double salary;
+	// DEPARTMENT是一个常量
+	public static final String DEPARTMENT = "开发人员";
 
-   // DEPARTMENT is a constant
-   public static final String DEPARTMENT = "Development ";
+	public static void main(String args[]) {
+		salary = 10000;
+		System.out.println(DEPARTMENT + "平均工资:" + salary);
+	}
+}
+```
 
-   public static void main(String args[]){
-      salary = 1000;
-      System.out.println(DEPARTMENT+"average salary:"+salary);
+编译以上代码输出结果如下所示：
+
+    开发人员平均工资:10000.0
+
+> **注意：**如果其他类想要访问该变量，可以这样访问：Employee.DEPARTMENT。
+
+# 9. Java 运算符
+
+计算机的最基本用途之一就是执行数学运算，作为一门计算机语言，Java也提供了一套丰富的运算符来操纵变量。我们可以把运算符分成以下几组：
+
+* 算术运算符
+* 关系运算符
+* 位运算符
+* 逻辑运算符
+* 赋值运算符
+* 其他运算符
+
+
+--------
+
+#### 算术运算符
+{:.no_toc}
+
+算术运算符用在数学表达式中，它们的作用和在数学中的作用一样。下表列出了所有的算术运算符。
+表格中的实例假设整数变量A的值为10，变量B的值为20：
+
+|操作符|	描述	|例子|
+|:---:|:---:|:---:|
+|+|	加法 - 相加运算符两侧的值	|A + B等于30|
+|-|	减法 - 左操作数减去右操作数	|A – B等于-10|
+|*|	乘法 - 相乘操作符两侧的值	|A * B等于200|
+|/|	除法 - 左操作数除以右操作数	|B / A等于2|
+|％|	取模 - 右操作数除左操作数的余数	|B%A等于0|
+|+ +|	自增 - 操作数的值增加1	|B + +等于21|
+|- -|	自减 -- 操作数的值减少1	|B - -等于19|
+
+**实例：**
+下面的简单示例程序演示了算术运算符。复制并粘贴下面的Java程序并保存为Test.java文件，然后编译并运行这个程序：
+
+```java
+public class Test {
+
+	public static void main(String args[]) {
+		int a = 10;
+		int b = 20;
+		int c = 25;
+		int d = 25;
+		System.out.println("a + b = " + (a + b));
+		System.out.println("a - b = " + (a - b));
+		System.out.println("a * b = " + (a * b));
+		System.out.println("b / a = " + (b / a));
+		System.out.println("b % a = " + (b % a));
+		System.out.println("c % a = " + (c % a));
+		System.out.println("a++   = " + (a++));
+		System.out.println("a--   = " + (a--));
+		// 查看 d++ 与 ++d 的不同
+		System.out.println("d++   = " + (d++));
+		System.out.println("++d   = " + (++d));
+	}
+}
+```
+<ul class="pager">
+<li class="previous">
+<a target="_blank" href="http://www.runoob.com/try/runcode.php?filename=test_operator&type=java" data-toggle="tooltip" data-placement="top" title="运行实例">运行实例</a>
+</li>
+</ul>
+
+以上实例编译运行结果如下：
+
+```
+a + b = 30
+a - b = -10
+a * b = 200
+b / a = 2
+b % a = 0
+c % a = 5
+a++   = 10
+a--   = 11
+d++   = 25
+++d   = 27
+```
+
+
+--------
+
+#### 关系运算符
+{:.no_toc}
+
+下表为Java支持的关系运算符  
+表格中的实例整数变量A的值为10，变量B的值为20：
+
+|	运算符	|	描述		|	例子 	|
+|:---:|:---|:---|
+|	==	|	检查如果两个操作数的值是否相等，如果相等则条件为真。	|(A == B) false|
+|	! =	|	检查如果两个操作数的值是否相等，如果值不相等则条件为真。	|(A ! = B) true|
+|	>	| 	检查左操作数的值是否大于右操作数的值，如果是那么条件为真。	|(A > B) false|
+|	<	|	检查左操作数的值是否小于右操作数的值，如果是那么条件为真。	|(A < B) true|
+|	> =	|	检查左操作数的值是否大于或等于右操作数的值，如果是那么条件为真。	|(A > = B) false|
+|	< =	|	检查左操作数的值是否小于或等于右操作数的值，如果是那么条件为真。	|(A < = B) true|
+
+**实例：**  
+下面的简单示例程序演示了关系运算符。复制并粘贴下面的Java程序并保存为Test.java文件，然后编译并运行这个程序：
+
+```java
+public class Test {
+
+	public static void main(String args[]) {
+		int a = 10;
+		int b = 20;
+		System.out.println("a == b = " + (a == b));
+		System.out.println("a != b = " + (a != b));
+		System.out.println("a > b = " + (a > b));
+		System.out.println("a < b = " + (a < b));
+		System.out.println("b >= a = " + (b >= a));
+		System.out.println("b <= a = " + (b <= a));
+	}
+}
+```
+
+以上实例编译运行结果如下：
+
+```
+a == b = false
+a != b = true
+a > b = false
+a < b = true
+b >= a = true
+b <= a = false
+```
+
+
+--------
+
+
+#### 位运算符
+{:.no_toc}
+
+Java定义了位运算符，应用于整数类型(int)，长整型(long)，短整型(short)，字符型(char)，和字节型(byte)等类型。  
+位运算符作用在所有的位上，并且按位运算。假设a = 60，b = 13;它们的二进制格式表示将如下：
+
+```java
+A = 0011 1100
+B = 0000 1101
+-----------------
+A&b = 0000 1100
+A | B = 0011 1101
+^ B = 0011 0001
+~A= 1100 0011
+```
+
+下表列出了位运算符的基本运算,假设整数变量A的值为60和变量B的值为13：
+
+|操作符|	描述	|例子|
+|:---:|:---|:---|
+|＆|	按位与操作符，当且仅当两个操作数的某一位都非0时候结果的该位才为1。	|（A＆B），得到12，即0000 1100|
+|\||	按位或操作符，只要两个操作数的某一位有一个非0时候结果的该位就为1。	|（A \| B）得到61，即 0011 1101|
+|^|	按位异或操作符，两个操作数的某一位不相同时候结果的该位就为1。	|（A ^ B）得到49，即 0011 0001|
+|〜|	按位补运算符翻转操作数的每一位。	|（〜A）得到-61，即1100 0011|
+|\<\<| 	按位左移运算符。左操作数按位左移右操作数指定的位数。	|A \<\< 2得到240，即 1111 0000|
+|\>\>| 	按位右移运算符。左操作数按位右移右操作数指定的位数。	|A \>\> 2得到15即 1111|
+|\>\>\>| 	按位右移补零操作符。左操作数的值按右操作数指定的位数右移，移动得到的空位以零填充。	|A\>\>\>2得到15即0000 1111|
+
+**实例：** 下面的简单示例程序演示了位运算符
+
+```java
+public class Test {
+	public static void main(String args[]) {
+		int a = 60; /* 60 = 0011 1100 */
+		int b = 13; /* 13 = 0000 1101 */
+		int c = 0;
+		c = a & b; /* 12 = 0000 1100 */
+		System.out.println("a & b = " + c);
+
+		c = a | b; /* 61 = 0011 1101 */
+		System.out.println("a | b = " + c);
+
+		c = a ^ b; /* 49 = 0011 0001 */
+		System.out.println("a ^ b = " + c);
+
+		c = ~a; /*-61 = 1100 0011 */
+		System.out.println("~a = " + c);
+
+		c = a << 2; /* 240 = 1111 0000 */
+		System.out.println("a << 2 = " + c);
+
+		c = a >> 2; /* 15 = 1111 */
+		System.out.println("a >> 2  = " + c);
+
+		c = a >>> 2; /* 15 = 0000 1111 */
+		System.out.println("a >>> 2 = " + c);
+	}
+}
+```
+
+以上实例编译运行结果如下：
+
+```
+a & b = 12
+a | b = 61
+a ^ b = 49
+~a = -61
+a << 2 = 240
+a >> 2  = 15
+a >>> 2 = 15
+```
+
+
+--------
+
+
+#### 逻辑运算符
+{:.no_toc}
+
+下表列出了逻辑运算符的基本运算，假设布尔变量A为真，变量B为假
+
+|操作符|	描述	|例子|
+|:---:|:---|:---|
+|&&|	称为逻辑与运算符。当且仅当两个操作数都为真，条件才为真。	|（A && B）为false|
+|\| \||	称为逻辑或操作符。如果任何两个操作数任何一个为真，条件为真。	|（A \| \| B）为true|
+|！|	称为逻辑非运算符。用来反转操作数的逻辑状态。如果条件为true，则逻辑非运算符将得到false。	|！（A && B）为true|
+
+**实例：**下面的简单示例程序演示了逻辑运算符
+
+```java
+public class Test {
+	public static void main(String args[]) {
+		boolean a = true;
+		boolean b = false;
+		System.out.println("a && b = " + (a && b));
+		System.out.println("a || b = " + (a || b));
+		System.out.println("!(a && b) = " + !(a && b));
+	}
+}
+```
+
+以上实例编译运行结果如下：
+
+```
+a && b = false
+a || b = true
+!(a && b) = true
+```
+
+
+
+--------
+
+
+#### 赋值运算符
+{:.no_toc}
+
+下面是Java语言支持的赋值运算符：
+
+|操作符|	描述	|例子|
+|:---:|:---|:---|
+|=|	简单的赋值运算符，将右操作数的值赋给左侧操作数	|C = A + B将把A + B得到的值赋给C|
+|+ =|	加和赋值操作符，它把左操作数和右操作数相加赋值给左操作数	|C + = A等价于C = C + A|
+|- =|	减和赋值操作符，它把左操作数和右操作数相减赋值给左操作数	|C - = A等价于C = C - A|
+|* =|	乘和赋值操作符，它把左操作数和右操作数相乘赋值给左操作数	|C * = A等价于C = C * A|
+|/ =|	除和赋值操作符，它把左操作数和右操作数相除赋值给左操作数	|C / = A等价于C = C / A|
+|（％）=	|取模和赋值操作符，它把左操作数和右操作数取模后赋值给左操作数	|C％= A等价于C = C％A|
+|\<\<=|	左移位赋值运算符	|C \<\<= 2等价于C = C \<\< 2|
+|\>\>=|	右移位赋值运算符	|C \>\> = 2等价于C = C \>\> 2|
+|＆=|	按位与赋值运算符	|C＆= 2等价于C = C＆2|
+|^ =|	按位异或赋值操作符	|C ^ = 2等价于C = C ^ 2|
+|\| =|	按位或赋值操作符	|C \| = 2等价于C = C \| 2|
+
+**实例：**面的简单示例程序演示了赋值运算符
+
+```java
+public class Test {
+	public static void main(String args[]) {
+		int a = 10;
+		int b = 20;
+		int c = 0;
+		c = a + b;
+		System.out.println("c = a + b = " + c);
+		c += a;
+		System.out.println("c += a  = " + c);
+		c -= a;
+		System.out.println("c -= a = " + c);
+		c *= a;
+		System.out.println("c *= a = " + c);
+		a = 10;
+		c = 15;
+		c /= a;
+		System.out.println("c /= a = " + c);
+		a = 10;
+		c = 15;
+		c %= a;
+		System.out.println("c %= a  = " + c);
+		c <<= 2;
+		System.out.println("c <<= 2 = " + c);
+		c >>= 2;
+		System.out.println("c >>= 2 = " + c);
+		c >>= 2;
+		System.out.println("c >>= a = " + c);
+		c &= a;
+		System.out.println("c &= 2  = " + c);
+		c ^= a;
+		System.out.println("c ^= a   = " + c);
+		c |= a;
+		System.out.println("c |= a   = " + c);
+	}
+}
+```
+
+以上实例编译运行结果如下：
+
+```
+c = a + b = 30
+c += a  = 40
+c -= a = 30
+c *= a = 300
+c /= a = 1
+c %= a  = 5
+c <<= 2 = 20
+c >>= 2 = 5
+c >>= a = 1
+c &= 2  = 0
+c ^= a   = 10
+c |= a   = 10
+
+```
+
+
+--------
+
+
+#### 其他运算符
+{:.no_toc}
+
+##### 条件运算符（?:）
+{:.no_toc}
+
+条件运算符也被称为三元运算符。该运算符有3个操作数，并且需要判断布尔表达式的值。  
+该运算符的主要是决定哪个值应该赋值给变量。
+
+    variable x = (expression) ? value if true : value if false
+
+**实例:**
+
+```java
+public class Test {
+	public static void main(String args[]) {
+		int a, b;
+		a = 10;
+		b = (a == 1) ? 20 : 30;
+		System.out.println("Value of b is : " + b);
+		b = (a == 10) ? 20 : 30;
+		System.out.println("Value of b is : " + b);
+	}
+}
+```
+
+以上实例编译运行结果如下：
+
+```
+Value of b is : 30
+Value of b is : 20
+```
+
+##### instanceOf 运算符
+{:.no_toc}
+
+该运算符用于操作对象实例，检查该对象是否是一个特定类型（类类型或接口类型）。
+
+instanceof运算符使用格式如下：
+
+    ( Object reference variable ) instanceOf  (class/interface type)
+
+如果运算符左侧变量所指的对象，是操作符右侧类或接口(class/interface)的一个对象，那么结果为真。
+
+下面是一个例子：
+
+```java
+String name = 'James';
+boolean result = name instanceOf String; // 由于name是String类型，所以返回真
+```
+
+如果被比较的对象兼容于右侧类型,该运算符仍然返回true。
+
+看下面的例子：
+
+```java
+class Vehicle {}
+
+public class Car extends Vehicle {
+	public static void main(String args[]) {
+		Vehicle a = new Car();
+		boolean result = a instanceof Car;
+		System.out.println(result);
+	}
+}
+```
+
+以上实例编译运行结果如下：
+
+    true
+
+##### Java运算符优先级
+{:.no_toc}
+
+当多个运算符出现在一个表达式中，谁先谁后呢？这就涉及到运算符的优先级别的问题。在一个多运算符的表达式中，运算符优先级不同会导致最后得出的结果差别甚大。
+例如，（1+3）＋（3+2）*2，这个表达式如果按加号最优先计算，答案就是 18，如果按照乘号最优先，答案则是 14。
+再如，x = 7 + 3 * 2;这里x得到13，而不是20，因为乘法运算符比加法运算符有较高的优先级，所以先计算3 * 2得到6，然后再加7。
+
+下表中具有最高优先级的运算符在的表的最上面，最低优先级的在表的底部。
+
+
+|类别|	操作符	|关联性|
+|:---:|:---|:---|
+|后缀|	() [] . (点操作符)	|左到右|
+|一元|	+ + - ！〜	|右到左|
+|乘性| 	* /％	|左到右|
+|加性| 	+ -	|左到右|
+|移位| 	\>\> \>\>\>  \<\< 	|左到右|
+|关系| 	\>\> = \<\< = 	|左到右|
+|相等| 	==  !=	|左到右|
+|按位与|	＆	|左到右|
+|按位异或|	^	|左到右|
+|按位或|	\|	|左到右|
+|逻辑与|	&&	|左到右|
+|逻辑或|	\| \|	|左到右|
+|条件|	？：	|右到左|
+|赋值|	= + = - = * = / =％= \>\> = \<\< =＆= ^ = \| =	|右到左|
+|逗号|	，	|左到右|
+
+# 10. Java 循环结构
+
+顺序结构的程序语句只能被执行一次。如果您想要同样的操作执行多次,，就需要使用循环结构。
+
+Java中有三种主要的循环结构：
+
+* while循环
+* do…while循环
+* for循环（在Java5中引入了一种主要用于数组的增强型for循环。）
+
+
+--------
+
+
+##### while循环
+{:.no_toc}
+
+while是最基本的循环，它的结构为：
+
+```java
+while( 布尔表达式 ) {
+	//循环内容
+}
+```
+
+> 只要布尔表达式为true，循环体会一直执行下去。
+
+**实例：**
+
+```java
+public class Test {
+	public static void main(String args[]) {
+		int x = 10;
+		while (x < 20) {
+			System.out.print("value of x : " + x);
+			x++;
+			System.out.print("\n");
+		}
+	}
+}
+```
+
+以上实例编译运行结果如下：
+
+```
+value of x : 10
+value of x : 11
+value of x : 12
+value of x : 13
+value of x : 14
+value of x : 15
+value of x : 16
+value of x : 17
+value of x : 18
+value of x : 19
+```
+
+##### do…while循环
+{:.no_toc}
+
+对于while语句而言，如果不满足条件，则不能进入循环。但有时候我们需要即使不满足条件，也至少执行一次。  
+do…while循环和while循环相似，不同的是，do…while循环至少会执行一次。
+
+
+```java
+do {
+    //代码语句
+}while(布尔表达式);
+```
+
+> **注意：**布尔表达式在循环体的后面，所以语句块在检测布尔表达式之前已经执行了。 如果布尔表达式的值为true，则语句块一直执行，直到布尔表达式的值为false。
+
+**实例：**
+
+```java
+public class Test {
+
+	public static void main(String args[]) {
+		int x = 10;
+
+		do {
+			System.out.print("value of x : " + x);
+			x++;
+			System.out.print("\n");
+		} while (x < 20);
+	}
+}
+```
+
+以上实例编译运行结果如下：
+
+```
+value of x : 10
+value of x : 11
+value of x : 12
+value of x : 13
+value of x : 14
+value of x : 15
+value of x : 16
+value of x : 17
+value of x : 18
+value of x : 19
+```
+
+##### for循环
+{:.no_toc}
+
+虽然所有循环结构都可以用while或者do...while表示，但Java提供了另一种语句—for循环，使一些循环结构变得更加简单。
+for循环执行的次数是在执行前就确定的。语法格式如下：
+
+```java
+for(初始化; 布尔表达式; 更新) {
+	//代码语句
+}
+```
+
+关于for循环有以下几点说明：
+* 最先执行初始化步骤。可以声明一种类型，但可初始化一个或多个循环控制变量，也可以是空语句。
+* 然后，检测布尔表达式的值。如果为true，循环体被执行。如果为false，循环终止，开始执行循环体后面的语句。
+* 执行一次循环后，更新循环控制变量。
+* 再次检测布尔表达式。循环执行上面的过程。
+
+**实例：**
+
+```java
+public class Test {
+
+   public static void main(String args[]) {
+
+      for(int x = 10; x < 20; x = x+1) {
+         System.out.print("value of x : " + x );
+         System.out.print("\n");
+      }
    }
 }
 ```
 
-上述代码会输出如下结果：
+以上实例编译运行结果如下：
 
-    Development average salary:1000
+```
+value of x : 10
+value of x : 11
+value of x : 12
+value of x : 13
+value of x : 14
+value of x : 15
+value of x : 16
+value of x : 17
+value of x : 18
+value of x : 19
+```
 
-注：如果变量从类外访问，常量就必须以 Employee.DEPARTMENT 访问。
+##### Java增强for循环
+{:.no_toc}
+
+Java5引入了一种主要用于数组的增强型for循环。
+Java增强for循环语法格式如下:
+
+```java
+for(声明语句 : 表达式)
+{
+	//代码句子
+}
+```
+
+> *声明语句：*声明新的局部变量，该变量的类型必须和数组元素的类型匹配。其作用域限定在循环语句块，其值与此时数组元素的值相等。
+> *表达式：*表达式是要访问的数组名，或者是返回值为数组的方法。
+
+**实例：**
+
+```java
+public class Test {
+
+	public static void main(String args[]) {
+		int[] numbers = { 10, 20, 30, 40, 50 };
+
+		for (int x : numbers) {
+			System.out.print(x);
+			System.out.print(",");
+		}
+		System.out.print("\n");
+		String[] names = { "James", "Larry", "Tom", "Lacy" };
+		for (String name : names) {
+			System.out.print(name);
+			System.out.print(",");
+		}
+	}
+}
+```
+
+以上实例编译运行结果如下：
+
+```
+10,20,30,40,50,
+James,Larry,Tom,Lacy,
+```
+
+
+--------
+
+
+##### break关键字
+{:.no_toc}
+
+break主要用在循环语句或者switch语句中，用来跳出整个语句块。  
+break跳出最里层的循环，并且继续执行该循环下面的语句。
+
+**语法：**break的用法很简单，就是循环结构中的一条语句：
+
+    break;
+
+**实例：**
+
+```java
+public class Test {
+
+   public static void main(String args[]) {
+      int [] numbers = {10, 20, 30, 40, 50};
+
+      for(int x : numbers ) {
+         if( x == 30 ) {
+	      break;
+         }
+         System.out.print( x );
+         System.out.print("\n");
+      }
+   }
+}
+```
+
+以上实例编译运行结果如下：
+
+```
+10
+20
+```
+
+##### continue关键字
+{:.no_toc}
+
+continue适用于任何循环控制结构中。作用是让程序立刻跳转到下一次循环的迭代。  
+在for循环中，continue语句使程序立即跳转到更新语句。  
+在while或者do…while循环中，程序立即跳转到布尔表达式的判断语句。
+
+**语法：**continue就是循环体中一条简单的语句
+
+    continue;
+
+**实例：**
+
+```java
+public class Test {
+
+	public static void main(String args[]) {
+		int[] numbers = { 10, 20, 30, 40, 50 };
+
+		for (int x : numbers) {
+			if (x == 30) {
+				continue;
+			}
+			System.out.print(x);
+			System.out.print("\n");
+		}
+	}
+}
+```
+
+以上实例编译运行结果如下：
+
+```
+10
+20
+40
+50
+```
+
+# 11. Java 分支结构
+
+顺序结构只能顺序执行，不能进行判断和选择，因此需要分支结构。
+
+Java有两种分支结构：
+
+* if语句
+* switch语句
+
+
+--------
+
+
+##### if语句
+{:.no_toc}
+
+一个if语句包含一个布尔表达式和一条或多条语句。
+
+**语法：**If语句的用语法如下
+
+```java
+if(布尔表达式)
+{
+	//如果布尔表达式为true将执行的语句
+}
+```
+
+如果布尔表达式的值为true，则执行if语句中的代码块。否则执行If语句块后面的代码。
+
+```java
+public class Test {
+
+	public static void main(String args[]) {
+		int x = 10;
+
+		if (x < 20) {
+			System.out.print("这是 if 语句");
+		}
+	}
+}
+```
+
+以上代码编译运行结果如下：
+
+    这是 if 语句
+
+##### if...else语句
+{:.no_toc}
+
+if语句后面可以跟else语句，当if语句的布尔表达式值为false时，else语句块会被执行。
+
+**语法：**if…else的用法如下
+
+```java
+if(布尔表达式){
+	//如果布尔表达式的值为true
+}else{
+	//如果布尔表达式的值为false
+}
+```
+
+**实例：**
+
+```java
+public class Test {
+
+	public static void main(String args[]) {
+		int x = 30;
+
+		if (x < 20) {
+			System.out.print("这是 if 语句");
+		} else {
+			System.out.print("这是 else 语句");
+		}
+	}
+}
+```
+
+以上代码编译运行结果如下：
+
+    这是 else 语句
+
+##### if...else if...else语句
+{:.no_toc}
+
+if语句后面可以跟elseif…else语句，这种语句可以检测到多种可能的情况。
+
+使用if，else if，else语句的时候，需要注意下面几点：
+
+* if语句至多有1个else语句，else语句在所有的elseif语句之后。
+* If语句可以有若干个elseif语句，它们必须在else语句之前。
+* 一旦其中一个else if语句检测为true，其他的else if以及else语句都将跳过执行。
+
+**语法：**if...else语法格式如下
+
+```java
+if(布尔表达式 1){
+	//如果布尔表达式 1的值为true执行代码
+}else if(布尔表达式 2){
+	//如果布尔表达式 2的值为true执行代码
+}else if(布尔表达式 3){
+	//如果布尔表达式 3的值为true执行代码
+}else {
+	//如果以上布尔表达式都不为true执行代码
+}
+```
+
+**实例：**
+
+```java
+public class Test {
+
+	public static void main(String args[]) {
+		int x = 30;
+
+		if (x == 10) {
+			System.out.print("Value of X is 10");
+		} else if (x == 20) {
+			System.out.print("Value of X is 20");
+		} else if (x == 30) {
+			System.out.print("Value of X is 30");
+		} else {
+			System.out.print("This is else statement");
+		}
+	}
+}
+```
+
+以上代码编译运行结果如下：
+
+    Value of X is 30
+
+##### 嵌套的if…else语句
+{:.no_toc}
+
+使用嵌套的if-else语句是合法的。也就是说你可以在另一个if或者elseif语句中使用if或者elseif语句。
+
+**语法：**嵌套的if…else语法格式如下
+
+```java
+if(布尔表达式 1){
+	//如果布尔表达式 1的值为true执行代码
+   if(布尔表达式 2){
+	//如果布尔表达式 2的值为true执行代码
+   }
+}
+```
+
+**实例：**
+
+```java
+public class Test {
+
+	public static void main(String args[]) {
+		int x = 30;
+		int y = 10;
+
+		if (x == 30) {
+			if (y == 10) {
+				System.out.print("X = 30 and Y = 10");
+			}
+		}
+	}
+}
+```
+
+以上代码编译运行结果如下：
+
+    X = 30 and Y = 10
+
+##### switch语句
+{:.no_toc}
+
+switch语句判断一个变量与一系列值中某个值是否相等，每个值称为一个分支。
+
+**语法：**switch语法格式如下
+
+```java
+switch(expression){
+	case value :
+	//语句
+	break; //可选
+	case value :
+	//语句
+	break; //可选
+	//你可以有任意数量的case语句
+	default : //可选
+	//语句
+}
+```
+
+switch语句有如下规则：
+
+* switch语句中的变量类型只能为byte、short、int或者char。
+* switch语句可以拥有多个case语句。每个case后面跟一个要比较的值和冒号。
+* case语句中的值的数据类型必须与变量的数据类型相同，而且只能是常量或者字面常量。
+* 当变量的值与case语句的值相等时，那么case语句之后的语句开始执行，直到break语句出现才会跳出switch语句。
+* 当遇到break语句时，switch语句终止。程序跳转到switch语句后面的语句执行。case语句不必须要包含break语句。如果* 没有break语句出现，程序会继续执行下一条case语句，直到出现break语句。
+* switch语句可以包含一个default分支，该分支必须是switch语句的最后一个分支。default在没有case语句的值和变量值相等的时候执行。default分支不需要break语句。
+
+
+**实例：**
+
+```java
+public class Test {
+
+	public static void main(String args[]) {
+		// char grade = args[0].charAt(0);
+		char grade = 'C';
+
+		switch (grade) {
+		case 'A':
+			System.out.println("Excellent!");
+			break;
+		case 'B':
+		case 'C':
+			System.out.println("Well done");
+			break;
+		case 'D':
+			System.out.println("You passed");
+		case 'F':
+			System.out.println("Better try again");
+			break;
+		default:
+			System.out.println("Invalid grade");
+		}
+		System.out.println("Your grade is " + grade);
+	}
+}
+```
+
+以上代码编译运行结果如下：
+
+```
+Well done
+Your grade is C
+````

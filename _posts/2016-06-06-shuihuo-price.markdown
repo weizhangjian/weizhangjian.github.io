@@ -27,7 +27,7 @@ h. 苹果手机统一		零售价=（报价+100元）+ 10元 + 顺丰运费
 --------
 
 
-### 以下报价为华强北批发底价，每天下午16点更新。
+### 以下报价为华强北批发底价，每天下午16-19点更新。
 ﻿
 ![](/img/in-post/post-bg-shuihuo-price/recommend-1.png)
 ![](/img/in-post/post-bg-shuihuo-price/recommend-2.png)

@@ -2,10 +2,14 @@
 layout:     post
 title:      "深圳华强北水货手机报价单"
 <<<<<<< HEAD
+<<<<<<< HEAD
 subtitle:   " \"2016年8月26日更新\""
 =======
 subtitle:   " \"2016年8月19日更新\""
 >>>>>>> origin/master
+=======
+subtitle:   " \"2016年8月8日更新\""
+>>>>>>> parent of 1fc36dd... shuihuo-price
 date:       2016-06-06 00:00:00
 author:     "JustinWei"
 header-img: "img/post-bg-shuihuo-price.jpg"

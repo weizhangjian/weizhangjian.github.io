@@ -42,7 +42,6 @@ h. 苹果手机统一		零售价=（报价+100元）+ 10元 + 顺丰运费
 
 #### 2.日版苹果iPhone6/6s Plus批发报价单，有锁要另购卡贴解锁
 ![](/img/in-post/post-bg-shuihuo-price/2-1.jp-iPhone.png)
-![](/img/in-post/post-bg-shuihuo-price/2-2.jp-iPhone-unlockcost.png)
 
 #### 3.美版iphone6/6s Plus批发报价单
 ![](/img/in-post/post-bg-shuihuo-price/3.us-iPhone.png)

@@ -97,7 +97,7 @@ h. 苹果手机统一		零售价=（报价+100元）+ 10元 + 顺丰运费
 
 
 ### 解ID锁 iCloud官解 网络锁 解ID锁 苹果iphone5s/6/6plus/6s/6splus
-软解只需提供手机串码，UDID。  
+软解只需提供手机串码、UDID：   
 苹果5s/6/6p/6s/6sp   白名单   720元     4-16天  
 苹果5s/6/6p/6s/6sp   黑名单   740元     4-16天（失败扣75元）   
 苹果5s/6/6p/6s/6sp   白名单   1520元    1-2天  
@@ -105,7 +105,7 @@ ipad wifi版/苹果表/MacBook   180元    1-2天（黑白全解）
 
 日版/美版/欧版等,官解网络锁:
 ![](/img/in-post/post-bg-shuihuo-price/iphone-id-unlock.png)
-  
-美国 s版美版解网络锁。  
+
+美国 s版美版解网络锁：  
 iphone6/6plus/6s/6splus 白名单   300元        1-7天解开  
 iphone6/6plus/6s/6splus 黑名单   550/650元    1-7天解开  

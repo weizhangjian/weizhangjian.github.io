@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "深圳华强北水货手机报价单"
-subtitle:   " \"2016年8月26日更新\""
+subtitle:   " \"2016年9月04日更新\""
 date:       2016-06-06 00:00:00
 author:     "JustinWei"
 header-img: "img/post-bg-shuihuo-price.jpg"
@@ -94,3 +94,18 @@ h. 苹果手机统一		零售价=（报价+100元）+ 10元 + 顺丰运费
   5.关于签收：您收到货后【务必】当着快递面验好东西齐全和机器外观没问题再签收哦~~，验收时发现货不对版、配件缺失、外观磨损等问题，可以直接打快递单上的电话与我们核实情况后再确定签收或是拒收。签收后发现外观问题请原谅我们无法处理。
 
   6.好评返现：好评晒单返现10元。
+
+
+### 解ID锁 iCloud官解 网络锁 解ID锁 苹果iphone5s/6/6plus/6s/6splus
+软解只需提供手机串码，UDID。  
+苹果5s/6/6p/6s/6sp   白名单   720元     4-16天  
+苹果5s/6/6p/6s/6sp   黑名单   740元     4-16天（失败扣75元）   
+苹果5s/6/6p/6s/6sp   白名单   1520元    1-2天  
+ipad wifi版/苹果表/MacBook   180元    1-2天（黑白全解）
+
+日版/美版/欧版等,官解网络锁:
+![](/img/in-post/post-bg-shuihuo-price/iphone-id-unlock.png)
+  
+美国 s版美版解网络锁。  
+iphone6/6plus/6s/6splus 白名单   300元        1-7天解开  
+iphone6/6plus/6s/6splus 黑名单   550/650元    1-7天解开  

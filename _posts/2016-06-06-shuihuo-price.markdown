@@ -80,7 +80,7 @@ h. 苹果手机统一		零售价=（报价+100元）+ 10元 + 顺丰运费 + 30�
 #### 淘宝购买地址[点这里](https://item.taobao.com/item.htm?id=535369074749 "淘宝下单")。
 
 #### 微信联系请扫一扫  
-![](/img/in-post/THE-TILC.jpg)
+![](/img/THE-TILC.jpg)
 
 --------
 

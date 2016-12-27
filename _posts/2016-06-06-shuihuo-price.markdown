@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "深圳华强北水货手机报价单"
-subtitle:   " \"2016年12月10日更新\""
+subtitle:   " \"2016年12月27日更新\""
 date:       2016-06-06 00:00:00
 author:     "JustinWei"
 header-img: "img/post-bg-shuihuo-price.jpg"
@@ -37,11 +37,10 @@ h. 苹果手机统一		零售价=（报价+100元）+ 10元 + 顺丰运费 + 30�
 ![](/img/in-post/post-bg-shuihuo-price/0-1.hk-iphone7.png)
 ![](/img/in-post/post-bg-shuihuo-price/0-2.us-iphone7.png)
 ![](/img/in-post/post-bg-shuihuo-price/0-3.jp-iphone7.png)
-
+![](/img/in-post/post-bg-shuihuo-price/0-4.kr-iphone7.png)
 
 #### 1.港版/台版苹果iphone 5S/6/6s Plus批发报价单
 ![](/img/in-post/post-bg-shuihuo-price/1-1.hk-iphone.png)
-![](/img/in-post/post-bg-shuihuo-price/1-2.hk-i-watch.png)
 
 #### 2.日版苹果iPhone6/6s Plus批发报价单，有锁要另购卡贴解锁
 ![](/img/in-post/post-bg-shuihuo-price/2-1.jp-iPhone.png)

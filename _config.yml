@@ -1,6 +1,6 @@
 # Site settings
 title: JustinWei'S Personal Blog
-SEOTitle: 魏张建的博客 | JustinWei'S Personal Blog
+SEOTitle: JustinWei的博客 | JustinWei'S Personal Blog
 header-img: img/home-bg.jpg
 email: weizhangjian@gmail.com
 description: ""
@@ -16,7 +16,7 @@ weibo_username:     #cm25
 zhihu_username:     #justinwei
 github_username:    weizhangjian
 twitter_username:   weizhangjian
-facebook_username:  weizhangjian.vip
+facebook_username:  weizhangjian
 email_username:     weizhangjian@gmail.com
 
 

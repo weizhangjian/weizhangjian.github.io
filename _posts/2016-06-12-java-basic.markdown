@@ -3,7 +3,7 @@ layout:     post
 title:      "Java基础"
 subtitle:   " \"开始 Java 编程之旅\""
 date:       2016-06-12 00:00:00
-author:     "JustinWei"
+author:     "Mr.Wei"
 header-img: "img/post-bg-about-java.jpg"
 tags:
     - Java

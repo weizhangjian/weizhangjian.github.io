@@ -1,9 +1,9 @@
 ---
 layout:     post
-title:      "Welcome to JustinWei's Blog"
+title:      "Welcome to Mr.Wei's Blog"
 subtitle:   " \"Hello World, Hello Blog\""
 date:       2016-06-10 00:00:00
-author:     "JustinWei"
+author:     "Mr.Wei"
 header-img: "img/post-bg-hello-blog.jpg"
 tags:
     - 生活

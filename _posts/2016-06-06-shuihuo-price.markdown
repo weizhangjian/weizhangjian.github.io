@@ -3,7 +3,7 @@ layout:     post
 title:      "深圳华强北水货手机报价单"
 subtitle:   " \"2017年01月15日更新\""
 date:       2016-06-06 00:00:00
-author:     "JustinWei"
+author:     "Mr.Wei"
 header-img: "img/post-bg-shuihuo-price.jpg"
 tags:
     - 手机
